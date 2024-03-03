@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>TalaTales</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>         
+            <nav class="navbar navbar-expand-lg bg-white">
+                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="png image">
+                    <button class="navbar-toggler border-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#000000" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+                <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-lighblue border-bottom">
+                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="png image">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="link-nav" href="#"><img src="https://github.com/Nthnnn26/talatales/blob/main/assets/home-fill.png?raw=true" alt="png image">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link-nav" href="library.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="52" fill="#6C628D" class="bi bi-book" viewBox="0 0 16 16">
+                                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                    </svg>
+                                    Library
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link-nav" href="profile.html"><img src="https://github.com/Nthnnn26/talatales/blob/main/assets/user.png?raw=true" alt="png image">Profile</a>
+                            </li>
+                        </ul>
+                        <div class="ms-auto log-out">
+                            <a class="log-out" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>  Log out</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div class="container-fluid d-flex justify-content-center align-items-center search-view">
+                <div class="searchbar mt-auto mb-5">
+                    <input class="form-control-lg" type="search" id="searchBar" placeholder="Search a story">
+                    <i class="fa fa-search glass" style="font-size: 24px; color: #6C628D;" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+
+        <section>              
+            <div class="scrollable mt-5">
+                <button class="btn-lg btn-cat active-cat" onclick="changeCategory('fable')">Fable</button>
+                <button class="btn-lg btn-cat" onclick="changeCategory('fairy-tale')">Fairy Tale</button>
+                <button class="btn-lg btn-cat" onclick="changeCategory('fantasy')">Fantasy</button>
+                <button class="btn-lg btn-cat" onclick="changeCategory('adventure')">Adventure</button>
+            </div>
+            
+            <div class="container-fluid d-flex" style="height: 40vh; background-color: #DEE0F3;">
+                <!--story-->
+                <div class="" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalTortoise">
+                    <div style="cursor: pointer;">
+                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/theTortoise.png?raw=true" alt="png Image" style="border: 5px solid #FFF; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);">
+                    </div>
+                    <h6 style="max-width: 140px;">The Tortoise and the Hare</h6>                     
+                </div>
+                
+                <div class="" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalTortoise">
+                    <div style="cursor: pointer;">
+                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/theTortoise.png?raw=true" alt="png Image" style="border: 5px solid #FFF; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);">
+                    </div>
+                    <h6 style="max-width: 140px;">Story 2 Sample</h6>                     
+                </div>
+
+                <!--modal-->
+                <div class="modal fade" id="modalTortoise" tabindex="-1" role="dialog" aria-labelledby="customModalLabel" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3; position: relative;">                         
+                            <div class="container-fluid d-flex justify-content-center align-items-center">
+                                <img class="img-fluid favorite" src="https://github.com/Nthnnn26/talatales/blob/main/assets/fav.png?raw=true" alt="error">
+                            </div>                                                                           
+                            <div style="padding-top: 20px;">
+                                <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/theTortoise.png?raw=true" alt="png" style="max-width: 110px; height: auto; border: 5px solid #FFF; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);">
+                            </div>    
+    
+                                <p class="lead font-weight-bold" style="margin: 0; color: #1A3057;">The Tortoise and the Hare</p>
+                                <p style="margin: 0; color: #6C628D;">Aesop</p> 
+                                <p style="margin: 0; color: #6C628D;">Illustrated by;</p>  
+                                <p style="margin: 0; color: #6C628D;">Jeanelle S. Yee</p>
+                                <p style="margin: 20px; color: #6C628D;">In the classic tale of "The Hare and the Tortoise," 
+                                    a boastful hare challenges a slow-moving tortoise to a race. The hare, confident in his speed, 
+                                    takes an early lead, while the tortoise plods along steadily. Who do you think will win the race: 
+                                    the speedy hare or the steady tortoise?</p>                                                 
+                            <div class="modal-footer w-100" style="border: none;">                              
+                                <div class="d-flex w-100 justify-content-around">
+                                    <button type="button" class="btn-block btn-md" style="background: transparent; border: none;"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/read.png?raw=true" alt="png"></button>
+                                    <button type="button" class="btn-block btn-md" style="background: transparent; border: none;"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/play_unlock.png?raw=true" alt="png"></button>
+                                </div>                                             
+                            </div>                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        
+        <section>
+            <div class="container d-flex justify-content-center vh-100">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center flex-column left-box">
+                        <h1 class="display-3" style="color: #1A3057;">Hi! My name is <spa style="color: #FCC710;">Tala</spa>....</h1>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center flex-column right-box">
+                        <div class="featured-image text-center">
+                            <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/tala.png?raw=true" alt="png image" style="width: 70%; height: auto;">
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row min-vh-100 justify-content-center">
+                    <div class="d-flex justify-content-center align-items-center flex-column" style="max-width: 600px;">
+                        <div class="row align-items-center">
+                            <h1 class="display-5" style="color: #6C628D;">About Us</h1>
+                        </div>
+                        <div class="row align-items-center">
+                            <p class="text-center" class="text-center" style="color: #6C628D;">PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER</p>
+                        </div>
+                    </div>
+    
+                    <div class="d-flex justify-content-center align-items-center justify-content-between about-content">
+                        <div class="row justify-content-center align-items-center" style="max-width: 350px;">
+                            <h3 class="display-5 text-center" style="color: #6C628D;">About Us</h3>
+                        <div class="row align-items-center">
+                            <p class="text-center" style="color: #6C628D;">PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER</p>
+                        </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center" style="max-width: 350px;">
+                            <h3 class="display-5 text-center" style="color: #6C628D;">About Us</h3>
+                        <div class="row align-items-center">
+                            <p class="text-center" style="color: #6C628D;">PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER</p>
+                        </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center" style="max-width: 350px;">
+                            <h3 class="display-5 text-center" style="color: #6C628D;">About Us</h3>
+                        <div class="row align-items-center">
+                            <p class="text-center fs-6" style="color: #6C628D;">PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

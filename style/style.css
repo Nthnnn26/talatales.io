@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Etna';
+    src: url('Etna-Sans-serif.otf') format('opentype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Etna', sans-serif;
+}
+.brand {
+    font-size: 64px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.navbar-nav .nav-item .nav-link {
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    color: #DEE0F3; 
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin-right: 10px;
+    transition: color 0.3s, border-color 0.3s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #1A3057;
+    color:#1A3057;
+}
+.navbar-nav .nav-item .link-nav {
+    text-decoration: none;
+    color: #1A3057; 
+    font-size: 32px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+.offcanvas-body .ms-auto {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+.log-out {
+    text-decoration: none;
+    color: #1A3057; 
+    font-size: 28px;
+    font-weight: 500;
+}
+.index {
+    background: url('https://github.com/Nthnnn26/talatales/blob/main/assets/index.png?raw=true');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.search-view {
+    background: url('https://github.com/Nthnnn26/talatales/blob/main/assets/search_bg.png?raw=true');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+body .index-btn {
+    font-size: 4rem;
+}
+.login-brand {
+    font-size: 110px;
+    color: #6C628D; 
+    padding: 10px 20px;
+}
+.color-purple {
+    color: #6C628D;
+}
+body .access-btn {
+    width: 150px;
+    background-color: #6C628D;
+    color: whitesmoke;
+}
+body .access-btn:hover {
+    background-color: #6C628D;
+    color: whitesmoke;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+.searchbar {
+    width: 400px;
+    background-color: #FFFFFF;
+    border: 3px solid #DEE0F3;
+    border-radius: 20px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+.glass:hover {
+    color: #1A3057;
+    cursor: pointer;
+}
+.scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
+.btn-cat {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: inline-block;
+    font-size: 24px;
+    color: #6C628D; 
+    min-width: 170px;
+    min-height: 50px;
+    border: none;
+    border-right: 2px solid #808080;
+    background-color: white;
+}
+.active-cat {
+    background-color: #DEE0F3;      
+}
+.favorite {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    margin-right: 30px; 
+    cursor: pointer;
+}
+@media (max-width: 576px) {
+    .brand {
+        font-size: 32px;
+    }
+    body .sidebar {
+        background-color: rgb(255, 255, 255, 0.15);
+        backdrop-filter: blur(16px);    
+    }
+    .index {
+        background: url('https://github.com/Nthnnn26/talatales/blob/main/assets/mob_index.png?raw=true');
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .search-view {
+        height: 30vh;
+    }
+    body .index-btn {
+       font-size: 2rem; 
+    }
+    .login-brand {
+        font-size: 64px; 
+    }
+    .about-content {
+        flex-direction: column; 
+        text-align: center;              
+    }
+}
