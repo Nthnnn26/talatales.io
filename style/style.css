@@ -10,14 +10,14 @@
     font-family: 'Etna', sans-serif;
 }
 .brand {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: bold;
     color: whitesmoke;
 }
 .navbar-nav .nav-item .nav-link {
     text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
     color: #DEE0F3; 
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     font-weight: 500;
     padding: 5px 10px;
@@ -31,7 +31,7 @@
 .navbar-nav .nav-item .link-nav {
     text-decoration: none;
     color: #1A3057; 
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     padding: 10px 20px;
     margin-right: 10px;
@@ -43,7 +43,7 @@
 .log-out {
     text-decoration: none;
     color: #1A3057; 
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 500;
 }
 .index {
@@ -159,6 +159,10 @@ body .favorite {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+    .col-brand {
+        width: 30%;
+        height: auto;
     }
     .search-view {
         height: 30vh;

@@ -66,6 +66,10 @@ function pauseButton() {
     document.getElementById('pauseButton').style.display = 'none';
     document.getElementById('playButton').style.display = 'block';
 }
+
+function exitStory() {
+    window.location.href = 'home.html';
+}
 $('#newPassword').click(function(){
     window.location.href = 'reset-code.html';
 })
