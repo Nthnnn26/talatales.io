@@ -13,7 +13,7 @@
         <div class="d-flex vh-100 flex-column">
             <div class="container-fluid d-flex justify-content-center align-items-center p-2 mb-auto" style="background-color: #DEE0F3;">
                 <div style="position: absolute; left: 0;">
-                    <button type="button" class="back-btn" style="border: none; background: transparent; margin-left: 10px;">
+                    <button type="button" class="back-btn" data-bs-toggle="modal" data-bs-target="#close" style="border: none; background: transparent; margin-left: 10px;">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#1A3057" class="bi bi-chevron-left" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                         </svg>
@@ -62,6 +62,21 @@
                 </button>
             </div>
         </div>
+
+        <div class="modal fade" id="close" tabindex="-1" role="dialog" aria-labelledby="customModalLabel" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3;"">
+                    <p class="text-center lead font-weight-bold display-6 p-3" style="color: #6C628D; max-width: 450px;">Are you sure you don't want to finish the story?</p>
+                    <div class="modal-footer w-100" style="border: none;">                              
+                        <div class="d-flex w-100 justify-content-around">
+                            <button type="button" class="btn btn-lg access-btn" style="background: #b37400; border: none;">Yes</button>
+                            <button type="button" class="btn btn-lg access-btn" style="background: #FF0000; border: none;">No</button>
+                        </div>                                             
+                    </div>  
+                </div>
+            </div>
+        </div>
+
         <script src="../script/main.js"></script>
     </body>
 </html>
