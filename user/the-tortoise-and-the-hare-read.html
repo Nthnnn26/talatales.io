@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>TalaTales</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="d-flex vh-100 flex-column">
+            <div class="container-fluid d-flex justify-content-center align-items-center p-2 mb-auto" style="background-color: #DEE0F3;">
+                <div style="position: absolute; left: 0;">
+                    <button type="button" class="back-btn" style="border: none; background: transparent; margin-left: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#1A3057" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="text-center" style="color: #1A3057; font-weight: bold; margin: 0;">The Tortoise and the Hare</h4>
+                </div>
+            </div>
+               
+            <!-- Main Content -->
+            <div class="container-fluid d-flex flex-column text-center justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center flex-column left-box p-3">
+                        <div class="container">
+                            <img id="main-img" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_1.png?raw=true" alt="png" style="box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-flex justify-content-center align-items-center flex-column right-box p-3">
+                        <h2 id="main-paragraph" style="color: #DBDBDB;">A Hare was making fun of the Tortoise one day for being so slow.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="changeScene('previous')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                    </svg>
+                </button>
+                <button type="button" id="pauseButton" style="border: none; background: transparent; padding: 5px;" onclick="pauseButton()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5"/>
+                    </svg>
+                </button>
+                <button type="button" id="playButton" style="border: none; background: transparent; padding: 5px; display: none;" onclick="playButton()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                    </svg>
+                </button>
+                <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="changeScene('next')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="../script/main.js"></script>
+    </body>
+</html>

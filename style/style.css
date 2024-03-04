@@ -89,7 +89,6 @@ body .access-btn:hover {
     background-color: #FFFFFF;
     border: 3px solid #DEE0F3;
     border-radius: 20px;
-    padding: 9px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -129,15 +128,22 @@ input {
 .active-cat {
     background-color: #DEE0F3;      
 }
-.favorite {
+body .favorite {
+    background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/favorite.png?raw=true'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute; 
+    width: 70px; 
+    height: 90px; 
     top: 0; 
     right: 0; 
     margin-right: 30px; 
     cursor: pointer;
+}
+.back-btn svg {
+    width: 24px;  /* Adjusted size for smaller screens */
+    height: 24px;
 }
 @media (max-width: 576px) {
     .brand {
@@ -166,5 +172,25 @@ input {
     .about-content {
         flex-direction: column; 
         text-align: center;              
+    }
+    body .favorite {
+        background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/favorite.png?raw=true'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute; 
+        width: 50px; 
+        height: 70px; 
+        top: 0; 
+        right: 0; 
+        margin-right: 30px; 
+    }
+    .container-fluid button svg {
+        width: 45px; 
+        height: 45px;
+    }
+    body .back-btn svg {
+        width: 18px;  /* Adjusted size for smaller screens */
+        height: 18px;
     }
 }
