@@ -145,6 +145,28 @@ body .favorite {
     width: 24px;  /* Adjusted size for smaller screens */
     height: 24px;
 }
+.story-view {
+    display: none;
+}
+#slow, #laugh, #run, #amused, #consented, #sight,
+#beside, #sleeping, #steadily, #goal, #swiftest {
+    position: absolute;
+    display: none;
+    background-color: #CBC0ED;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    text-align: left;
+}
+.highlighted-text, .highlighted-text1, .highlighted-text2, .highlighted-text3, .highlighted-text4, 
+.highlighted-text5, .highlighted-text6, .highlighted-text7, .highlighted-text8, .highlighted-text9,
+ .highlighted-text10 {
+    color: #6C628D;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 @media (max-width: 576px) {
     .brand {
         font-size: 32px;
