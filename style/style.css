@@ -165,7 +165,21 @@ body .favorite {
     text-decoration: underline;
     cursor: pointer;
 }
+.text {
+    color: #DBDBDB;
 
+}
+.game-view .game-btn {
+    border: none;
+    background: transparent;
+    border-radius: 25px;
+}
+.game-view .game-btn:hover {
+    border: 5px solid #DEE0F3;
+}
+.quiz-bee, .memory-game, .spelling-bee {
+    display: none;
+}
 
 @media (max-width: 576px) {
     .brand {
@@ -216,7 +230,11 @@ body .favorite {
         height: 45px;
     }
     body .back-btn svg {
-        width: 18px;  /* Adjusted size for smaller screens */
+        width: 18px;  
         height: 18px;
+    }
+    .game-view .game-btn {
+        width: 150px;
+        height: auto;
     }
 }

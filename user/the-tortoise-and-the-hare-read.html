@@ -36,10 +36,10 @@
                     </div>
 
                     <div class="col-md-6 d-flex justify-content-center align-items-center flex-column right-box p-3">
-                        <h2 style="color: #DBDBDB;">A Hare was making fun of the Tortoise one day for being so <span class="highlighted-text" onclick="tipSlow()">slow</span>.</h2>
+                        <h2 id="" class="text">A Hare was making fun of the Tortoise one day for being so <span class="highlighted-text" onclick="tipSlow()">slow</span>.</h2>
                         
                         <div id="slow">
-                            <button type="button" onclick="closeSlow()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('slow')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun;</p>
@@ -98,10 +98,10 @@
                     </div>
 
                     <div class="col-md-6 d-flex justify-content-center align-items-center flex-column right-box p-3">
-                        <h2 style="color: #DBDBDB;">"Do you ever get anywhere?" he asked with a mocking <span class="highlighted-text1" onclick="tipLaugh()">laugh</span>.</h2>
+                        <h2 id="" class="text">"Do you ever get anywhere?" he asked with a mocking <span class="highlighted-text1" onclick="tipLaugh()">laugh</span>.</h2>
                         
                         <div id="laugh">
-                            <button type="button" onclick="closeLaugh()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('laugh')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun;</p>
@@ -163,7 +163,7 @@
                         <h2 style="color: #DBDBDB;">"Yes," replied the Tortoise, "and I get there sooner than you think. Ill <span class="highlighted-text2" onclick="tipRun()">run</span> you a race and prove it."</h2>
                         
                         <div id="run">
-                            <button type="button" onclick="closeRun()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('run')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun:</p>
@@ -225,7 +225,7 @@
                         <h2 style="color: #DBDBDB;">The Hare was much <span class="highlighted-text3" onclick="tipAmused()">amused</span> at the idea of running a race with the Tortoise, but for the fun of the thing he agreed</h2>
                         
                         <div id="amused">
-                            <button type="button" onclick="closeAmused()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('amused')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun:</p>
@@ -287,7 +287,7 @@
                         <h2 style="color: #DBDBDB;">So the Fox, who had <span class="highlighted-text4" onclick="tipConsented()">consented</span> to act as judge, marked the distance and started the runners off.</h2>
                         
                         <div id="consented">
-                            <button type="button" onclick="closeConsented()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('consented')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun:</p>
@@ -349,7 +349,7 @@
                         <h2 style="color: #DBDBDB;">The Hare was soon far out <span class="highlighted-text5" onclick="tipSight()">sight</span> and to make the Tortoise feel very deeply how ridiculous it was for him to try a race with a Hare.</h2>
                         
                         <div id="sight">
-                            <button type="button" onclick="closeSight()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('sight')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun:</p>
@@ -382,7 +382,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
                             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
                         </svg>
-                    </button>>
+                    </button>
                     <button type="button" class="audio-control-button" data-audio="audio_6" style="border: none; background: transparent; padding: 5px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
@@ -411,7 +411,7 @@
                         <h2 style="color: #DBDBDB;">He lay down <span class="highlighted-text6" onclick="tipBeside()">beside</span> the course to take a nap until the Tortoise should catch up.</h2>
                         
                         <div id="beside">
-                            <button type="button" onclick="closeBeside()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('beside')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun:</p>
@@ -473,7 +473,7 @@
                         <h2 style="color: #DBDBDB;">The Tortoise meanwhile kept going slowly but <span class="highlighted-text7" onclick="tipSteadily()">steadily</span> , and, after a time, passed the place where the Hare was <span class="highlighted-text8" onclick="tipSleeping()">sleeping</span>.</h2>
                         
                         <div id="sleeping">
-                            <button type="button" onclick="closeSleeping()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('sleeping')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun:</p>
@@ -491,7 +491,7 @@
                         </div>
 
                         <div id="steadily">
-                            <button type="button" onclick="closeSteadily()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('steadily')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun:</p>
@@ -556,7 +556,7 @@
                         <h2 style="color: #DBDBDB;">But the Hare slept on very peacefully; and when at last he did wake up, the Tortoise was near the <span class="highlighted-text9" onclick="tipGoal()">goal</span> goal.</h2>
                         
                         <div id="goal">
-                            <button type="button" onclick="closeGoal()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('goal')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun:</p>
@@ -618,7 +618,7 @@
                         <h2 style="color: #DBDBDB;">The Hare now ran his <span class="highlighted-text10" onclick="tipSwiftest()">swiftest</span>, but he could not overtake the Tortoise in time.</h2>
                         
                         <div id="swiftest">
-                            <button type="button" onclick="closeSwiftest()" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                            <button type="button" onclick="closeTip('swiftest')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
                                 <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
                             </button>
                             <p style="margin: 0; color: #1A3057;">Noun:</p>
@@ -657,8 +657,8 @@
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
                         </svg>
                     </button>
-                    <button type="button" style="border: none; background: transparent; padding: 5px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FFFFFF" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <button type="button" id="end-btn" style="border: none; background: transparent; padding: 5px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                             <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
                         </svg>
                     </button>
@@ -681,8 +681,62 @@
             </div>
         </div>
 
+        <div class="modal fade" id="end_story" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3;"">
+                    <p class="text-center lead font-weight-bold display-6 p-3" style="color: #6C628D;">Well done, Lisa</p>
+                    <p class="fs-5" style="color: #6C628D;">You have completed the story</p> 
+                    <div class="modal-footer w-100 text-center" style="border: none;">                                                  
+                        <div class="d-flex w-100 justify-content-around">                         
+                            <button type="button" class="btn btn-md access-btn mt-2" style="background: #b37400; border: none;" onclick="theTortoiseAndTheHareGame()">Yes</button>
+                            <button type="button" class="btn btn-md access-btn mt-2" data-bs-dismiss="modal" style="background: #FF0000; border: none;">No</button>
+                        </div>                                             
+                    </div>  
+                </div>
+            </div>
+        </div>
+
         <script src="../script/main.js"></script>
         <script>  
+        var timeoutArray = [];
+        var isAnimating = false;
+        var start = false;
+        var currentWordIndex = 0;
+
+        function applyKaraokeWordColor(element) {
+        var words = element.textContent.split(' ');
+        isAnimating = true;
+
+        for (var i = currentWordIndex; i < words.length; i++) {
+            if (isAnimating) {
+                timeoutArray.push(setTimeout(function (index) {
+                    return function () {
+                        words[index] = '<span style="color: red;">' + words[index] + '</span>';
+                        element.innerHTML = words.join(' ');
+
+                        // Scroll to the bottom for each added span (optional)
+                        element.scrollTop = element.scrollHeight;
+
+                        // Update the currentWordIndex after each word is processed
+                        currentWordIndex = index + 1;
+                    };
+                }(i), (i - currentWordIndex) * 400));
+            } else {
+                isAnimating = false;
+            }
+        }
+    }
+
+        function toggleAnimation() {
+            if (isAnimating) {
+                // Stop the animation
+                for (var i = 0; i < timeoutArray.length; i++) {
+                    clearTimeout(timeoutArray[i]);
+                }
+                isAnimating = false;
+            }
+        }
+
         const audioButtons = document.querySelectorAll('.audio-control-button');
 
         audioButtons.forEach(button => {
@@ -693,15 +747,19 @@
             const audioPlayer = document.getElementById(audioId);
             const playButton = document.querySelector(`[data-audio="${audioId}"]`);
             const pauseButton = document.querySelector(`[data-audio="${audioId}"]`); // Add this line
+            toggleAnimation();
 
+
+            
             if (audioPlayer.paused) {
                 playButton.innerHTML = getPauseSVG();
                 audioPlayer.play();
+                applyKaraokeWordColor(document.getElementById('karaokeText'));
             } else {
                 playButton.innerHTML = getPlaySVG();
                 audioPlayer.pause();
             }
-        }    
+        }      
         
         function getPlaySVG() {
             return `<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
@@ -870,56 +928,13 @@
             tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
         }
 
-        function closeSlow() {
-            var tooltip = document.getElementById('slow');
-            tooltip.style.display = 'none';
-        }
-        function closeLaugh() {
-            var tooltip = document.getElementById('laugh');
-            tooltip.style.display = 'none';
-        }
-        function closeRun() {
-            var tooltip = document.getElementById('run');
-            tooltip.style.display = 'none';
-        }
-        function closeAmused() {
-            var tooltip = document.getElementById('amused');
-            tooltip.style.display = 'none';
-        }
-        function closeConsented() {
-            var tooltip = document.getElementById('consented');
-            tooltip.style.display = 'none';
-        }
-        function closeSight() {
-            var tooltip = document.getElementById('sight');
-            tooltip.style.display = 'none';
-        }
-        function closeBeside() {
-            var tooltip = document.getElementById('beside');
-            tooltip.style.display = 'none';
-        }
-        function closeSleeping() {
-            var tooltip = document.getElementById('sleeping');
-            tooltip.style.display = 'none';
-        }
-        function closeSteadily() {
-            var tooltip = document.getElementById('steadily');
-            tooltip.style.display = 'none';
-        }
-        function closeGoal() {
-            var tooltip = document.getElementById('goal');
-            tooltip.style.display = 'none';
-        }
-        function closeSwiftest() {
-            var tooltip = document.getElementById('swiftest');
-            tooltip.style.display = 'none';
+        function closeTip(tooltipId) {
+            var tooltip = document.getElementById(tooltipId);
+            if (tooltip) {
+                tooltip.style.display = 'none';
+            }
         }
 
-        
-
-        $('#exit_modal').click(function(){
-            $('#exit_story').modal('show')
-        })
         </script>
     </body>
 </html>

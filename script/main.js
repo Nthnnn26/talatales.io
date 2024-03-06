@@ -10,6 +10,14 @@ $('#exit_modal').click(function(){
     $('#exit_story').modal('show')
 })
 
+$('#end-btn').click(function(){
+    $('#end_story').modal('show')
+})
+
+function theTortoiseAndTheHareGame() {
+    window.location.href = 'the-tortoise-and-the-hare-game.html';
+}
+
 function exitStory() {
     window.location.href = 'home.html';
 }
@@ -72,3 +80,4 @@ goalBtn.addEventListener('click', () => {
 swiftestBtn.addEventListener('click', () => {
     swiftest.play();
 });
+

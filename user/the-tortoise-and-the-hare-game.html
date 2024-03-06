@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>TalaTales</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        .modal-content {
+            background: transparent;
+            border: none;
+        }
+
+        .modal-transparent {
+            background: rgba(255, 255, 255, 0.8); /* Use a semi-transparent white background for the content area */
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="d-flex justify-content-center align-items-center p-2 mb-auto" style="background-color: #DEE0F3;">
+                <div style="position: absolute; left: 0;">
+                    <button type="button" id="exit_modal" class="back-btn" style="border: none; background: transparent; margin-left: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#1A3057" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="text-center" style="color: #1A3057; font-weight: bold; margin: 0;">The Tortoise and the Hare</h4>
+                </div>
+            </div>
+        </header>
+
+        <section class="container-fluid text-center mt-5 game-view">
+            <h1 style="color: #6C628D;">Choose a Game</h1>
+            <div class="container d-flex justify-content-center align-items-center flex-wrap mt-5">
+                <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                    <button type="button" class="game-btn" onclick="showGame('.quiz-bee')"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/qzb.png?raw=true" alt="png"></button>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                    <button type="button" class="game-btn" onclick="showGame('.memory-game')"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/mgs.png?raw=true" alt="png"></button>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                    <button type="button" class="game-btn" onclick="showGame('.spelling-bee')"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/spb.png?raw=true" alt="png"></button>
+                </div>                   
+            </div>        
+        </section>
+
+        <section class="container-fluid text-center mt-5 quiz-bee">
+            <div class="container story-view" id="question-1">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">Who was making fun of whom in the story?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionOne(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" onclick="questionOne(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionOne(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionOne(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div>  
+            
+            <div class="container story-view" id="question-2">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">What did the Tortoise suggest to the Hare?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionTwo(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" onclick="questionTwo(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionTwo(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionTwo(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div> 
+
+            <div class="container story-view" id="question-3">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">Who agreed to act as the judge for the race?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionThree(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" onclick="questionThree(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionThree(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionThree(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div> 
+
+            <div class="container story-view" id="question-4">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">What did the Hare do during the race?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionFour(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" onclick="questionFour(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionFour(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionFour(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div>
+
+            <div class="container story-view" id="question-5">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">How did the Tortoise feel about racing the Hare?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionFive(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" onclick="questionFive(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionFive(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionFive(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div>
+
+            <div class="container story-view" id="question-6">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">What did the Hare do when he was far ahead in the race?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionSix(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" onclick="questionSix(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionSix(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionSix(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div>
+
+            <div class="container story-view" id="question-7">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">How did the Tortoise pass the Hare during the race?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionSeven(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" onclick="questionSeven(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionSeven(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionSeven(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div>
+
+            <div class="container story-view" id="question-8">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">Why did the Hare lose the race?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionEight(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" onclick="questionEight(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionEight(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionEight(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div>
+
+            <div class="container story-view" id="question-9">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">Who won the race in the end?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionNine(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" onclick="questionNine(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionNine(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionNine(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div>
+
+            <div class="container story-view" id="question-10">
+                <h1 id="question" class="mb-5" style="color: #6C628D;">What lesson does the story teach?</h1>
+                <div class="row mt-5">
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionTen(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c1.png?raw=true" alt="image"></button>
+                        <button type="button" class="btn choices-btn m-2" sonclick="questionTen(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c2.png?raw=true" alt="image"></button>            
+                    </div> 
+                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn choices-btn m-2" onclick="questionTen(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c3.png?raw=true" alt="image"></button> 
+                        <button type="button" class="btn choices-btn m-2" onclick="questionTen(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c4.png?raw=true" alt="image"></button> 
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid text-center mt-5 memory-game">
+            <h1 style="color: #6C628D;">Memory Game</h1>
+                   
+        </section>
+
+        <section class="container-fluid text-center mt-5 spelling-bee">
+            <h1 style="color: #6C628D;">Spelling BEE</h1>
+                   
+        </section>
+
+        <div class="modal fade" id="exit_story" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3;"">
+                    <p class="text-center lead font-weight-bold display-6 p-3" style="color: #6C628D; max-width: 450px;">Are you sure you don't want to end the game?</p>
+                    <div class="modal-footer w-100" style="border: none;">                              
+                        <div class="d-flex w-100 justify-content-around">
+                            <button type="button" class="btn btn-lg access-btn" style="background: #b37400; border: none;" onclick="exitStory()">Yes</button>
+                            <button type="button" class="btn btn-lg access-btn" data-bs-dismiss="modal" style="background: #FF0000; border: none;">No</button>
+                        </div>                                             
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="correct" tabindex="-1" role="dialog" aria-labelledby="transparentModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center align-items-center">
+                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/correct.png?raw=true" alt="png" style="width: 300px; height: 300px;">
+                <button type="button" class="btn btn-lg access-btn mt-5" style="background: #b37400; border: none;" data-bs-dismiss="modal" onclick="next()">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="wrong" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center align-items-center">
+                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/wrong.png?raw=true" alt="png" style="width: 300px; height: 300px;">
+                <button type="button" class="btn btn-lg access-btn mt-5" style="background: #b37400; border: none;" data-bs-dismiss="modal" onclick="next()">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="../script/main.js"></script>
+        <script>
+          
+            var gameView = document.querySelector('.game-view');
+            var page = 1;
+
+            function showGame(gameId) {
+                var game = document.querySelector(gameId);
+                gameView.style.display = 'none';
+                game.style.display = 'block';
+            }
+
+            window.addEventListener('load', function () {
+            var sections = document.querySelectorAll('.story-view');
+
+            if (sections.length > 0) {
+                sections[0].style.display = 'block';
+            }
+        });
+
+        function next() {
+            page++;
+            showQuestion(page);
+        }
+
+        function showQuestion(page) {
+            // Add logic to show the next question based on the page value
+            var currentQuestion = document.getElementById('question-' + (page - 1));
+            var nextQuestion = document.getElementById('question-' + page);
+
+            if (currentQuestion) {
+                currentQuestion.style.display = 'none';
+            }
+
+            if (nextQuestion) {
+                nextQuestion.style.display = 'block';
+            } else {
+                // Handle logic when there are no more questions
+                alert('No more questions.');
+            }
+        }
+
+        function questionOne(checkAnswer) {
+            if (checkAnswer === 1) {
+                $('#correct').modal('show')
+               
+            } else {
+                $('#wrong').modal('show')
+               
+            }
+        }
+
+        function questionTwo(checkAnswer) {
+            if (checkAnswer === 2) {
+                $('#correct').modal('show')        
+            } else {
+                $('#wrong').modal('show')             
+            }
+        }
+
+        function questionThree(checkAnswer) {
+            if (checkAnswer === 3) {
+                $('#correct').modal('show') 
+            } else {
+                $('#wrong').modal('show')  
+            }
+        }
+
+        function questionFour(checkAnswer) {
+            if (checkAnswer === 2) {
+                $('#correct').modal('show') 
+            } else {
+                $('#wrong').modal('show')  
+            }
+        }
+
+        function questionFive(checkAnswer) {
+            if (checkAnswer === 4) {
+                $('#correct').modal('show') 
+            } else {
+                $('#wrong').modal('show')  
+            }
+        }
+
+        function questionSix(checkAnswer) {
+            if (checkAnswer === 1) {
+                $('#correct').modal('show') 
+            } else {
+                $('#wrong').modal('show')  
+            }
+        }
+
+        function questionSeven(checkAnswer) {
+            if (checkAnswer === 3) {
+                $('#correct').modal('show') 
+            } else {
+                $('#wrong').modal('show')  
+            }
+        }
+
+        function questionEight(checkAnswer) {
+            if (checkAnswer === 2) {
+                $('#correct').modal('show') 
+            } else {     
+                $('#wrong').modal('show')  
+            }
+        }
+
+        function questionNine(checkAnswer) {
+            if (checkAnswer === 4) {
+                $('#correct').modal('show') 
+            } else { 
+                $('#wrong').modal('show')  
+            }
+        }
+
+        function questionTen(checkAnswer) {
+            if (checkAnswer === 1) {
+                $('#correct').modal('show') 
+            } else {
+                $('#wrong').modal('show')  
+            }
+        }
+        </script>
+    </body>
+</html>
