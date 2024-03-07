@@ -6,6 +6,10 @@ function read() {
     window.location.href = 'the-tortoise-and-the-hare-read.html';
 }
 
+function play() {
+    window.location.href = 'the-tortoise-and-the-hare-play.html';
+}
+
 $('#exit_modal').click(function(){
     $('#exit_story').modal('show')
 })

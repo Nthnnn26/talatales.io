@@ -141,8 +141,22 @@ body .favorite {
     margin-right: 30px; 
     cursor: pointer;
 }
+footer {
+    background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/footer.png?raw=true'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    height: 450px; 
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.about-content{
+    flex-direction: row;
+}
 .back-btn svg {
-    width: 24px;  /* Adjusted size for smaller screens */
+    width: 24px; 
     height: 24px;
 }
 .story-view {
@@ -180,7 +194,14 @@ body .favorite {
 .quiz-bee, .memory-game, .spelling-bee {
     display: none;
 }
-
+body .modal-transparent {
+    background: transparent;
+    border: none;
+}
+.modal-content .popup{
+   width: 60%;
+   height: auto;
+}
 @media (max-width: 576px) {
     .brand {
         font-size: 32px;
@@ -209,10 +230,6 @@ body .favorite {
     .login-brand {
         font-size: 64px; 
     }
-    .about-content {
-        flex-direction: column; 
-        text-align: center;              
-    }
     body .favorite {
         background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/favorite.png?raw=true'); 
         background-size: cover;
@@ -224,6 +241,17 @@ body .favorite {
         top: 0; 
         right: 0; 
         margin-right: 30px; 
+    }
+    .about-content {
+        flex-direction: column; 
+        text-align: center;              
+    }
+    footer {
+        height: 450px;
+        background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/mob_footer.png?raw=true');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
     }
     .container-fluid button svg {
         width: 45px; 
@@ -237,4 +265,12 @@ body .favorite {
         width: 150px;
         height: auto;
     }
+    .choices-btn img {
+        width: 90%;
+        height: auto;
+    }
+    .modal-content .popup{
+        width: 40%;
+        height: auto;
+     }
 }

@@ -10,16 +10,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <style>
-        .modal-content {
-            background: transparent;
-            border: none;
-        }
-
-        .modal-transparent {
-            background: rgba(255, 255, 255, 0.8); /* Use a semi-transparent white background for the content area */
-        }
-    </style>
     </head>
     <body>
         <header>
@@ -220,8 +210,8 @@
 
         <div class="modal fade" id="correct" tabindex="-1" role="dialog" aria-labelledby="transparentModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content text-center align-items-center">
-                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/correct.png?raw=true" alt="png" style="width: 300px; height: 300px;">
+                <div class="modal-content modal-transparent text-center align-items-center">
+                <img class="img-fluid popup" src="https://github.com/Nthnnn26/talatales/blob/main/assets/correct.png?raw=true" alt="png">
                 <button type="button" class="btn btn-lg access-btn mt-5" style="background: #b37400; border: none;" data-bs-dismiss="modal" onclick="next()">Next</button>
                 </div>
             </div>
@@ -229,9 +219,22 @@
 
         <div class="modal fade" id="wrong" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true" data-keyboard="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content text-center align-items-center">
-                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/wrong.png?raw=true" alt="png" style="width: 300px; height: 300px;">
+                <div class="modal-content modal-transparent text-center align-items-center">
+                <img class="img-fluid popup" src="https://github.com/Nthnnn26/talatales/blob/main/assets/wrong.png?raw=true" alt="png">
                 <button type="button" class="btn btn-lg access-btn mt-5" style="background: #b37400; border: none;" data-bs-dismiss="modal" onclick="next()">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="done" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3;"">
+                    <p class="text-center lead font-weight-bold display-6 p-3" style="color: #6C628D; max-width: 450px;">You have earned this badge for having an excellent quiz score</p>
+                    <div class="modal-footer w-100" style="border: none;">                              
+                        <div class="d-flex w-100 justify-content-center">
+                            <button type="button" class="btn btn-lg access-btn" data-bs-dismiss="modal" style="background: #FF0000; border: none; border-radius: 50px;">Exit</button>
+                        </div>                                             
+                    </div>  
                 </div>
             </div>
         </div>
@@ -274,7 +277,7 @@
                 nextQuestion.style.display = 'block';
             } else {
                 // Handle logic when there are no more questions
-                alert('No more questions.');
+                $('#done').modal('show')
             }
         }
 
