@@ -2,12 +2,17 @@
 function forgotPassword() {
     window.location.href = 'reset-code.html';
 }
+
 function read() {
-    window.location.href = 'the-tortoise-and-the-hare-read.html';
+    window.location.href = 'the-tortoise-and-the-hare-reading.html';
 }
 
-function play() {
-    window.location.href = 'the-tortoise-and-the-hare-play.html';
+function theTortoiseAndTheHareGame() {
+    window.location.href = 'the-tortoise-and-the-hare-game.html';
+}
+
+function exitStory() {
+    window.location.href = 'home.html';
 }
 
 $('#exit_modal').click(function(){
@@ -18,13 +23,6 @@ $('#end-btn').click(function(){
     $('#end_story').modal('show')
 })
 
-function theTortoiseAndTheHareGame() {
-    window.location.href = 'the-tortoise-and-the-hare-game.html';
-}
-
-function exitStory() {
-    window.location.href = 'home.html';
-}
 
 
 const slow = document.getElementById('audio_slow');
@@ -51,37 +49,47 @@ const steadilyBtn = document.getElementById('steadily-btn');
 const goalBtn = document.getElementById('goal-btn');
 const swiftestBtn = document.getElementById('swiftest-btn');
 
-slowBtn.addEventListener('click', () => {
-    slow.play();
-});
-laughBtn.addEventListener('click', () => {
-    laugh.play();
-});
-runBtn.addEventListener('click', () => {
-    run.play();
-});
-amusedBtn.addEventListener('click', () => {
-    amused.play();
-});
-consentedBtn.addEventListener('click', () => {
-    consented.play();
-});
-sightBtn.addEventListener('click', () => {
-    sight.play();
-});
-besideBtn.addEventListener('click', () => {
-    beside.play();
-});
-sleepingBtn.addEventListener('click', () => {
-    sleeping.play();
-});
-steadilyBtn.addEventListener('click', () => {
-    steadily.play();
-});
-goalBtn.addEventListener('click', () => {
-    goal.play();
-});
-swiftestBtn.addEventListener('click', () => {
-    swiftest.play();
-});
+slowBtn.addEventListener('click', () => { slow.play(); });
+laughBtn.addEventListener('click', () => { laugh.play(); });
+runBtn.addEventListener('click', () => { run.play(); });
+amusedBtn.addEventListener('click', () => { amused.play(); });
+consentedBtn.addEventListener('click', () => { consented.play(); });
+sightBtn.addEventListener('click', () => { sight.play(); });
+besideBtn.addEventListener('click', () => { beside.play(); });
+sleepingBtn.addEventListener('click', () => { sleeping.play(); });
+steadilyBtn.addEventListener('click', () => { steadily.play(); });
+goalBtn.addEventListener('click', () => { goal.play(); });
+swiftestBtn.addEventListener('click', () => { swiftest.play(); });
 
+const slowPhonetics = document.getElementById('slow_phonetics');
+const laughPhonetics = document.getElementById('laugh_phonetics');
+const runPhonetics = document.getElementById('run_phonetics');
+const amusedPhonetics = document.getElementById('amused_phonetics');
+const consentedPhonetics = document.getElementById('consented_phonetics');
+const sightPhonetics = document.getElementById('sight_phonetics');
+const besidePhonetics = document.getElementById('beside_phonetics');
+const sleepingPhonetics = document.getElementById('sleeping_phonetics');
+const goalPhonetics = document.getElementById('goal_phonetics');
+const swiftestPhonetics = document.getElementById('swiftest_phonetics');
+
+const proSlowBtn = document.getElementById('pro_slow');
+const proLaughBtn = document.getElementById('pro_laugh');
+const proRunBtn = document.getElementById('pro_run');
+const proAmusedBtn = document.getElementById('pro_amused');
+const proConsentedBtn = document.getElementById('pro_consented');
+const proSightBtn = document.getElementById('pro_sight');
+const proBesideBtn = document.getElementById('pro_beside');
+const proSleepingBtn = document.getElementById('pro_sleeping');
+const proGoalBtn = document.getElementById('pro_goal');
+const proSwiftestBtn = document.getElementById('pro_swiftest');
+
+proSlowBtn.addEventListener('click', () => { slowPhonetics.play(); });
+proLaughBtn.addEventListener('click', () => { laughPhonetics.play(); });
+proRunBtn.addEventListener('click', () => { runPhonetics.play(); });
+proAmusedBtn.addEventListener('click', () => { amusedPhonetics.play(); });
+proConsentedBtn.addEventListener('click', () => { consentedPhonetics.play(); });
+proSightBtn.addEventListener('click', () => { sightPhonetics.play(); });
+proBesideBtn.addEventListener('click', () => { besidePhonetics.play(); });
+proSleepingBtn.addEventListener('click', () => { sleepingPhonetics.play(); });
+proGoalBtn.addEventListener('click', () => { goalPhonetics.play(); });
+proSwiftestBtn.addEventListener('click', () => { swiftestPhonetics.play(); });
