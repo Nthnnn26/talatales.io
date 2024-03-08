@@ -23,7 +23,14 @@ $('#end-btn').click(function(){
     $('#end_story').modal('show')
 })
 
+let currentPlayingAudio = null;
 
+function stopCurrentAudio() {
+    if (currentPlayingAudio) {
+        currentPlayingAudio.pause();
+        currentPlayingAudio.currentTime = 0;
+    }
+}
 
 const slow = document.getElementById('audio_slow');
 const laugh = document.getElementById('audio_laugh');
@@ -69,6 +76,7 @@ const consentedPhonetics = document.getElementById('consented_phonetics');
 const sightPhonetics = document.getElementById('sight_phonetics');
 const besidePhonetics = document.getElementById('beside_phonetics');
 const sleepingPhonetics = document.getElementById('sleeping_phonetics');
+const steadilyPhonetics = document.getElementById('steadily_phonetics');
 const goalPhonetics = document.getElementById('goal_phonetics');
 const swiftestPhonetics = document.getElementById('swiftest_phonetics');
 
@@ -80,6 +88,7 @@ const proConsentedBtn = document.getElementById('pro_consented');
 const proSightBtn = document.getElementById('pro_sight');
 const proBesideBtn = document.getElementById('pro_beside');
 const proSleepingBtn = document.getElementById('pro_sleeping');
+const proSteadilyBtn = document.getElementById('pro_steadily');
 const proGoalBtn = document.getElementById('pro_goal');
 const proSwiftestBtn = document.getElementById('pro_swiftest');
 
@@ -90,6 +99,7 @@ proAmusedBtn.addEventListener('click', () => { amusedPhonetics.play(); });
 proConsentedBtn.addEventListener('click', () => { consentedPhonetics.play(); });
 proSightBtn.addEventListener('click', () => { sightPhonetics.play(); });
 proBesideBtn.addEventListener('click', () => { besidePhonetics.play(); });
-proSleepingBtn.addEventListener('click', () => { sleepingPhonetics.play(); });
+proSleepingBtn.addEventListener('click', () => { stopCurrentAudio(); currentPlayingAudio = sleepingPhonetics; sleepingPhonetics.play(); });
+proSteadilyBtn.addEventListener('click', () => { stopCurrentAudio(); currentPlayingAudio = steadilyPhonetics; steadilyPhonetics.play(); });
 proGoalBtn.addEventListener('click', () => { goalPhonetics.play(); });
 proSwiftestBtn.addEventListener('click', () => { swiftestPhonetics.play(); });
