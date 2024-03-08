@@ -136,7 +136,7 @@
                             </p>
                         </div>    
                         <audio controls id="laugh_phonetics" class="d-none">
-                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Laugh.mp3?raw=true" type="audio/mp3">                                 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetics-Laugh.mp3?raw=true" type="audio/mp3">                                 
                         </audio>
                         <audio controls id="audio_laugh" class="d-none">
                             <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/laugh.mp3?raw=true" type="audio/mp3">                                 
@@ -199,7 +199,7 @@
                             </p>
                         </div> 
                         <audio controls id="run_phonetics" class="d-none">
-                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Run.mp3?raw=true" type="audio/mp3">                                 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetics-Run.mp3?raw=true" type="audio/mp3">                                 
                         </audio>
                         <audio controls id="audio_run" class="d-none">
                             <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/run.mp3?raw=true" type="audio/mp3">                                 
@@ -262,7 +262,7 @@
                             </p>
                         </div> 
                         <audio controls id="amused_phonetics" class="d-none">
-                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Amused.mp3?raw=true" type="audio/mp3">                                 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetics-Amused.mp3?raw=true" type="audio/mp3">                                 
                         </audio>
                         <audio controls id="audio_amused" class="d-none">
                             <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/amused.mp3?raw=true" type="audio/mp3">                                 
@@ -324,7 +324,7 @@
                             </p>
                         </div>
                         <audio controls id="consented_phonetics" class="d-none">
-                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Consented.mp3?raw=true" type="audio/mp3">                                 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetics-Consented.mp3?raw=true" type="audio/mp3">                                 
                         </audio>
                         <audio controls id="audio_consented" class="d-none">
                             <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/consented.mp3?raw=true" type="audio/mp3">                                 
@@ -386,7 +386,7 @@
                             </p>
                         </div>
                         <audio controls id="sight_phonetics" class="d-none">
-                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Sight.mp3?raw=true" type="audio/mp3">                                 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetics-Sight.mp3?raw=true" type="audio/mp3">                                 
                         </audio>
                         <audio controls id="audio_sight" class="d-none">
                             <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/sight.mp3?raw=true" type="audio/mp3">                                 
@@ -732,8 +732,6 @@
                 }
             });
 
-            
-
             function toggleVideo(thumbnailId, videoId, subtitleId, textId, control) {
                 var video = document.getElementById(videoId);
                 var subtitle = document.getElementById(subtitleId);
@@ -857,7 +855,7 @@
             videolaugh.play();
         }
 
-        function tipRun(thumbnailRun, thumbnailRun) {
+        function tipRun(thumbnailRun, videoRun) {
             var tooltip = document.getElementById('run');
             tooltip.style.display = 'block';
             var highlightedText = document.querySelector('.highlighted-text2');
@@ -1002,7 +1000,7 @@
             videogoal.play();
         }
 
-        function tipSwiftest() {
+        function tipSwiftest(thumbnailSwiftest, videoSwiftest) {
             var tooltip = document.getElementById('swiftest');
             tooltip.style.display = 'block';
             var highlightedText = document.querySelector('.highlighted-text10');
