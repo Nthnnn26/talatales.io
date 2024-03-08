@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>TalaTales</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        .story-view {
+            display: none;
+
+        }
+       .center-child {
+            height: calc(100vh - 45px);
+       }
+        #video_1, #video_2, #video_3,  #video_4, #video_5, 
+        #video_6, #video_7, #video_8, #video_9,  #video_10, 
+        #subtitle_1, #subtitle_2, #subtitle_3, #subtitle_4, #subtitle_5, 
+        #subtitle_6, #subtitle_7, #subtitle_8, #subtitle_9, #subtitle_10 {
+            display: none;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="d-flex justify-content-center align-items-center p-2 mb-auto" style="background-color: #DEE0F3;">
+                <div style="position: absolute; left: 0;">
+                    <button type="button" id="exit_modal" class="back-btn" style="border: none; background: transparent; margin-left: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#1A3057" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <h4 class="text-center" style="color: #1A3057; font-weight: bold; margin: 0;">The Tortoise and the Hare</h4>
+                </div>
+            </div>
+        </header>
+
+        <!--main content-->
+
+        <section class="story-view" id="page_1">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3">
+                        <img id="thumbnail_1" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_1.png?raw=true" alt="image">
+                        <video id="video_1" class="img-fluid" width="600" height="450">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/vid_1.mp4?raw=true" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_1" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_1.mp4?raw=true" type="video/mp4">
+                        </video>                 
+                        <h2 id="text_1" class="text text-center">A Hare was making fun of the Tortoise one day for being so <span id="pro_slow" class="highlighted-text" onclick="tipSlow('thumbnail_1', 'video_1')">slow</span>.</h2>                    
+                        <div id="slow">
+                            <button type="button" onclick="closeTip('slow')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun;</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Slow</span> - moving without speed</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="slow-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /slō/            
+                            </p>
+                        </div>    
+                        <audio controls id="slow_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Slow.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>                                                 
+                        <audio id="audio_slow" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/slow.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>                   
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FFFFFF" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>                     
+                    <button type="button" id="control1" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_1', 'video_1', 'subtitle_1', 'text_1', 'control1')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="next(1, 'thumbnail_1', 'video_1', 'subtitle_1', 'text_1', 'control1')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view" id="page_2">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3 ">
+                        <img id="thumbnail_2" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_2.png?raw=true" alt="image">
+                        <video id="video_2" class="img-fluid" width="600" height="450">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/vid_2.mp4?raw=true" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_2" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_2.mp4?raw=true" type="video/mp4">
+                        </video> 
+                        <h2 id="text_2" class="text text-center">"Do you ever get anywhere?" he asked with a mocking <span id="pro_laugh" class="highlighted-text1" onclick="tipLaugh('thumbnail_2', 'video_2')">laugh</span>.</h2>                     
+                        <div id="laugh">
+                            <button type="button" onclick="closeTip('laugh')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun;</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Laugh</span> -to show emotion with a chuckle or explosive vocal sound</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="laugh-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /laf/          
+                            </p>
+                        </div>    
+                        <audio controls id="laugh_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Laugh.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_laugh" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/laugh.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>                 
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="previous(2, 'thumbnail_2', 'video_2', 'subtitle_2', 'text_2', 'control2')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>                
+                    <button type="button" id="control2" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_2', 'video_2', 'subtitle_2', 'text_2', 'control2')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="next(2, 'thumbnail_2', 'video_2', 'subtitle_2', 'text_2', 'control2')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view" id="page_3">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3 ">
+                        <img id="thumbnail_3" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_3.png?raw=true" alt="image">
+                        <video id="video_3" class="img-fluid" width="600" height="450">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/vid_3.mp4?raw=true" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_3" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_4.mp4?raw=true" type="video/mp4">
+                        </video> 
+                        <h2 id="text_3" class="text text-center">"Yes," replied the Tortoise, "and I get there sooner than you think. Ill <span id="pro_run" class="highlighted-text2" onclick="tipRun('thumbnail_3', 'video_3')">run</span> you a race and prove it."</h2>
+                    
+                        <div id="run">
+                            <button type="button" onclick="closeTip('run')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun:</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Run</span> - to go faster than a walk</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="run-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /rən/           
+                            </p>
+                        </div> 
+                        <audio controls id="run_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Run.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_run" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/run.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>                     
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="previous(3, 'thumbnail_3', 'video_3', 'subtitle_3', 'text_3', 'control3')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>                       
+                    <button type="button" id="control3" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_3', 'video_3', 'subtitle_3', 'text_3', 'control3')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="next(3, 'thumbnail_3', 'video_3', 'subtitle_3', 'text_3', 'control3')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view" id="page_4">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3">
+                        <img id="thumbnail_4" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_4.png?raw=true" alt="image">
+                        <video id="video_4" class="img-fluid" width="600" height="450">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/vid_4.mp4?raw=true" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_4" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_4.mp4?raw=true" type="video/mp4">
+                        </video> 
+                        <h2 id="text_4" class="text text-center">The Hare was much <span id="pro_amused" class="highlighted-text3" onclick="tipAmused('thumbnail_4', 'video_4')">amused</span> at the idea of running a race with the Tortoise, but for the fun of the thing he agreed</h2>
+                        
+                        <div id="amused">
+                            <button type="button" onclick="closeTip('amused')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun:</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Amused</span> - pleasantly entertained or diverted as by something funny</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="amused-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /əmyo͞ozd/         
+                            </p>
+                        </div> 
+                        <audio controls id="amused_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Amused.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_amused" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/amused.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>                    
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="previous(4, 'subtitle_4', 'audio_amused')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>                       
+                    <button type="button" id="control4" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_4', 'video_4', 'subtitle_4', 'text_4', 'control4')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="next(4, 'subtitle_4', 'audio_amused')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view" id="page_5">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3">
+                        <img id="thumbnail_5" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_5.png?raw=true" alt="image">
+                        <img id="video_5" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_5.png?raw=true" alt="image">
+                        
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_5" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_5.mp4?raw=true" type="video/mp4">
+                        </video> 
+                        <h2 id="text_5" class="text text-center">So the Fox, who had <span id="pro_consented" class="highlighted-text4" onclick="tipConsented('thumbnail_5', 'video_5')">consented</span> to act as judge, marked the distance and started the runners off.</h2>
+                        
+                        <div id="consented">
+                            <button type="button" onclick="closeTip('consented')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun:</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Consented</span> - give permission for something to happen</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="consented-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /kuhn - sen - tuhd/        
+                            </p>
+                        </div>
+                        <audio controls id="consented_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Consented.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_consented" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/consented.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>                  
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="previous(5, 'subtitle_5', 'audio_consented')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>
+                    <button type="button" id="control5" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_5', 'video_5', 'subtitle_5', 'text_5', 'control5')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="next(5, 'subtitle_5', 'audio_consented')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view" id="page_6">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3">
+                        <img id="thumbnail_6" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_6.png?raw=true" alt="image">
+                        <img id="video_6" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_6.png?raw=true" alt="image">
+                        
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_6" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_6.mp4?raw=true" type="video/mp4">
+                        </video> 
+                        <h2 id="text_6" class="text text-center">The Hare was soon far out <span id="pro_sight" class="highlighted-text5" onclick="tipSight('thumbnail_6', 'video_6')">sight</span> and to make the Tortoise feel very deeply how ridiculous it was for him to try a race with a Hare.</h2>
+                        
+                        <div id="sight">
+                            <button type="button" onclick="closeTip('sight')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun:</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Sight</span> - something that is seen</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="sight-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /sīt/       
+                            </p>
+                        </div>
+                        <audio controls id="sight_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Sight.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_sight" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/sight.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>                 
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="previous(6, 'thumbnail_6', 'video_6', 'subtitle_6', 'text_6', 'control6')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>
+                    <button type="button" id="control6" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_6', 'video_6', 'subtitle_6', 'text_6', 'control6')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="next(6, 'thumbnail_6', 'video_6', 'subtitle_6', 'text_6', 'control6')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view" id="page_7">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3">
+                        <img id="thumbnail_7" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_7.png?raw=true" alt="image">
+                        <img id="video_7" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_7.png?raw=true" alt="image">
+                        
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_7" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_7.mp4?raw=true" type="video/mp4">
+                        </video> 
+                        <h2 id="text_7" class="text text-center">He lay down <span id="pro_beside" class="highlighted-text6" onclick="tipBeside('thumbnail_7', 'video_7')">beside</span> the course to take a nap until the Tortoise should catch up.</h2>
+                        
+                        <div id="beside">
+                            <button type="button" onclick="closeTip('beside')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun:</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Beside</span> - by the side of</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="beside-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /bəsīd/    
+                            </p>
+                        </div>
+                        <audio controls id="beside_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Beside.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_beside" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/beside.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>                
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="previous(7, 'thumbnail_7', 'video_7', 'subtitle_7', 'text_7', 'control7')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>
+                    <button type="button" id="control7" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_7', 'video_7', 'subtitle_7', 'text_7', 'control7')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="next(7, 'thumbnail_7', 'video_7', 'subtitle_7', 'text_7', 'control7')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view" id="page_8">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3">
+                        <img id="thumbnail_8" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_8.png?raw=true" alt="image">
+                        <video id="video_8" class="img-fluid" width="600" height="450">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/vid_8.mp4?raw=true" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_8" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_8.mp4?raw=true" type="video/mp4">
+                        </video> 
+                        <h2 id="text_8" class="text text-center">The Tortoise meanwhile kept going slowly but <span id="pro_steadily" class="highlighted-text7" onclick="tipSteadily('thumbnail_8', 'video_8')">steadily</span> , and, after a time, passed the place where the Hare was <span id="pro_sleeping" class="highlighted-text8" onclick="tipSleeping('thumbnail_8', 'video_8')">sleeping</span>.</h2>
+                        
+                        <div id="sleeping">
+                            <button type="button" onclick="closeTip('sleeping')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun:</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Sleeping</span> - the state or condition of being asleep</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="sleeping-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /slēpiNG/    
+                            </p>
+                        </div>
+
+                        <div id="steadily">
+                            <button type="button" onclick="closeTip('steadily')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun:</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Steadily</span> - calmly and in a controlled way</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="steadily-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /stedəlē/   
+                            </p>
+                        </div>
+                        <audio controls id="sleeping_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Sleeping.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="steadily_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Steadily.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_sleeping" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/sleeping.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_steadily" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/steadily.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>               
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="previous(8, 'thumbnail_8', 'video_8', 'subtitle_8', 'text_8', 'control8')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>
+                    <button type="button" id="control8" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_8', 'video_8', 'subtitle_8', 'text_8', 'control8')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="next(8, 'thumbnail_8', 'video_8', 'subtitle_8', 'text_8', 'control8')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view" id="page_9">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3">
+                        <img id="thumbnail_9" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_9.png?raw=true" alt="image">
+                        <img id="video_9" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_9.png?raw=true" alt="image">
+                        
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_9" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_9.mp4?raw=true" type="video/mp4">
+                        </video> 
+                        <h2 id="text_9" class="text text-center">But the Hare slept on very peacefully; and when at last he did wake up, the Tortoise was near the <span id="pro_goal" class="highlighted-text9" onclick="tipGoal('thumbnail_9', 'video_9')">goal</span> goal.</h2>
+                        
+                        <div id="goal">
+                            <button type="button" onclick="closeTip('goal')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun:</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Goal</span> - the end toward which effort is directed</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="goal-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /ɡōl/  
+                            </p>
+                        </div>
+                        <audio controls id="goal_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Goal.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_goal" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/goal.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>               
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="previous(9, 'thumbnail_9', 'video_9', 'subtitle_9', 'text_9', 'control9')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>
+                    <button type="button" id="control9" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_9', 'video_9', 'subtitle_9', 'text_9', 'control9')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="next(9, 'thumbnail_9', 'video_9', 'subtitle_9', 'text_9', 'control9')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view" id="page_10">
+            <div class="container-fluid d-flex justify-content-center align-items-center center-child">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center left-box p-3">
+                        <img id="thumbnail_10" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/page_10.png?raw=true" alt="image">
+                        <video id="video_10" class="img-fluid" width="600" height="450">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/vid_10.mp4?raw=true" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center right-box p-3">
+                        <video id="subtitle_10" class="img-fluid"> 
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/subtitle_10.mp4?raw=true" type="video/mp4">
+                        </video> 
+                        <h2 id="text_10" class="text text-center">The Hare now ran his <span id="pro_swiftest" class="highlighted-text10" onclick="tipSwiftest('thumbnail_10', 'video_10')">swiftest</span>, but he could not overtake the Tortoise in time.</h2>
+                        
+                        <div id="swiftest">
+                            <button type="button" onclick="closeTip('swiftest')" style="position: absolute; top: 5px; right: 15px; border: none; background: transparent;">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/cross-mark.png?raw=true" alt="x" style="width: 100%; height: 100%;">
+                            </button>
+                            <p style="margin: 0; color: #1A3057;">Noun:</p>
+                            <p style="margin: 0; color: #1A3057;"><span>Swiftest</span> - capable of moving with great speed</p>
+                            <p style="margin: 0; color: #1A3057;">
+                                <button id="swiftest-btn" style="border: none; background: transparent;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                                        <path d="M10.025 8a4.5 4.5 0 0 1-1.318 3.182L8 10.475A3.5 3.5 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.5 4.5 0 0 1 10.025 8M7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11"/>
+                                    </svg>
+                                </button>
+                                /’swif - tuhst/
+                            </p>
+                        </div>
+                        <audio controls id="swiftest_phonetics" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/Phonetic-Swiftest.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>
+                        <audio controls id="audio_swiftest" class="d-none">
+                            <source src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/swiftest.mp3?raw=true" type="audio/mp3">                                 
+                        </audio>              
+                    </div>
+                </div>             
+            </div>
+
+            <div class="fixed-bottom">
+                <div class="container-fluid d-flex justify-content-center text-center mt-auto mb-2">
+                    <button type="button" style="border: none; background: transparent; padding: 5px;" onclick="previous(10, 'thumbnail_10', 'video_10', 'subtitle_10', 'text_10', 'control10')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>
+                    <button type="button" id="control10" style="border: none; background: transparent; padding: 5px;" onclick="toggleVideo('thumbnail_10', 'video_10', 'subtitle_10', 'text_10', 'control10')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                        </svg>
+                    </button>
+                    <button type="button" id="end-btn" style="border: none; background: transparent; padding: 5px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#CBC0ED" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--modal-->
+
+        <div class="modal fade" id="exit_story" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3;"">
+                    <p class="text-center lead font-weight-bold display-6 p-3" style="color: #6C628D; max-width: 450px;">Are you sure you don't want to finish the story?</p>
+                    <div class="modal-footer w-100" style="border: none;">                              
+                        <div class="d-flex w-100 justify-content-around">
+                            <button type="button" class="btn btn-lg" style="background: #b37400; border: none; border-radius: 30px; width: 120px;" onclick="exitStory()">Yes</button>
+                            <button type="button" class="btn btn-lg" data-bs-dismiss="modal" style="background: #FF0000; border: none; border-radius: 30px; width: 120px;">No</button>
+                        </div>                                             
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="end_story" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3;"">
+                    <p class="text-center lead font-weight-bold display-6 p-3" style="color: #6C628D;">Well done, Lisa</p>
+                    <p class="fs-5" style="color: #6C628D;">You have completed the story</p> 
+                    <div class="modal-footer w-100 text-center" style="border: none;">                                                  
+                        <div class="d-flex w-100 justify-content-around">                         
+                            <button type="button" class="btn btn-md access-btn mt-2" style="background: #b37400; border: none;" onclick="theTortoiseAndTheHareGame()">Yes</button>
+                            <button type="button" class="btn btn-md access-btn mt-2" data-bs-dismiss="modal" style="background: #FF0000; border: none;">No</button>
+                        </div>                                             
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <!--script-->
+        <script src="../script/main.js"></script>
+        <script>
+            window.addEventListener('load', function () {
+                var sections = document.querySelectorAll('.story-view');
+
+                if (sections.length > 0) {
+                    sections[0].style.display = 'block';
+                }
+            });
+
+            
+
+            function toggleVideo(thumbnailId, videoId, subtitleId, textId, control) {
+                var video = document.getElementById(videoId);
+                var subtitle = document.getElementById(subtitleId);
+                var text = document.getElementById(textId);
+                var thumbnail = document.getElementById(thumbnailId);
+                const playPauseBtn = document.getElementById(control);
+
+                text.style.display = "none";
+                video.style.display = "none";
+                thumbnail.style.display = "block";
+                subtitle.style.display = "block";
+                          
+                if (subtitle.paused) {
+                    subtitle.play();  
+                    playPauseBtn.innerHTML = getPauseSVG();
+                } else {
+                    subtitle.pause();
+                    playPauseBtn.innerHTML = getPlaySVG();
+                }
+                
+                subtitle.addEventListener('ended', function() {
+                    thumbnail.style.display = "block";
+                    text.style.display = "block";
+                    video.style.display = "none";
+                    subtitle.style.display = "none";
+                    playPauseBtn.innerHTML = getPlaySVG();
+            });
+                
+            }
+
+            function next(currentPage, thumbnailId, videoId, subtitleId, textId, control) {
+                var sections = document.querySelectorAll('.story-view');
+                sections[currentPage - 1].style.display = 'none';
+                var nextPage = currentPage % sections.length + 1;
+                sections[nextPage - 1].style.display = 'block';
+                stopAllVideosAndAudio();
+
+                var video = document.getElementById(videoId);
+                var subtitle = document.getElementById(subtitleId);
+                var text = document.getElementById(textId);
+                var thumbnail = document.getElementById(thumbnailId);
+                const playPauseBtn = document.getElementById(control);
+
+                text.style.display = "block";
+                video.style.display = "block";
+                thumbnail.style.display = "none";
+                subtitle.style.display = "none";
+                playPauseBtn.innerHTML = getPlaySVG();
+            }
+
+            function previous(currentPage, thumbnailId, videoId, subtitleId, textId, control) {
+                var sections = document.querySelectorAll('.story-view');
+                sections[currentPage - 1].style.display = 'none';
+                var previousPage = (currentPage - 2 + sections.length) % sections.length + 1;
+                sections[previousPage - 1].style.display = 'block';
+                stopAllVideosAndAudio();
+
+                var video = document.getElementById(videoId);
+                var subtitle = document.getElementById(subtitleId);
+                var text = document.getElementById(textId);
+                var thumbnail = document.getElementById(thumbnailId);
+                const playPauseBtn = document.getElementById(control);
+
+                text.style.display = "block";
+                video.style.display = "block";
+                thumbnail.style.display = "none";
+                subtitle.style.display = "none";
+                playPauseBtn.innerHTML = getPlaySVG();
+            }
+
+            function stopAllVideosAndAudio() {
+                // Stop all videos and reset to 0
+                var allVideos = document.querySelectorAll('video');
+                allVideos.forEach(function(video) {
+                    video.pause();
+                    video.currentTime = 0;
+                  
+                });
+
+                // Stop all audio elements
+                var allAudio = document.querySelectorAll('audio');
+                allAudio.forEach(function(audio) {
+                    audio.pause();
+                });
+            }
+
+        function tipSlow(thumbnailSlow, videoSlow) {          
+            var tooltip = document.getElementById('slow');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailslow = document.getElementById(thumbnailSlow);
+            var videoslow = document.getElementById(videoSlow);
+
+            videoslow.style.display = "block";
+            thumbnailslow.style.display = "none";
+            videoslow.play();
+
+        }
+
+        function tipLaugh(thumbnailLaugh, videoLaugh) {
+            var tooltip = document.getElementById('laugh');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text1');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnaillaugh = document.getElementById(thumbnailLaugh);
+            var videolaugh = document.getElementById(videoLaugh);
+
+            videolaugh.style.display = "block";
+            thumbnaillaugh.style.display = "none";
+            videolaugh.play();
+        }
+
+        function tipRun(thumbnailRun, thumbnailRun) {
+            var tooltip = document.getElementById('run');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text2');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailrun = document.getElementById(thumbnailRun);
+            var videorun = document.getElementById(videoRun);
+
+            videorun.style.display = "block";
+            thumbnailrun.style.display = "none";
+            videorun.play();
+        }
+
+        function tipAmused(thumbnailAmused, videoAmused) {
+            var tooltip = document.getElementById('amused');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text3');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailamused = document.getElementById(thumbnailAmused);
+            var videoamused = document.getElementById(videoAmused);
+
+            videoamused.style.display = "block";
+            thumbnailamused.style.display = "none";
+            videoamused.play();
+
+        }
+
+        function tipConsented(thumbnailConsented, videoConsented) {
+            var tooltip = document.getElementById('consented');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text4');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailconsented = document.getElementById(thumbnailConsented);
+            var videoconsented = document.getElementById(videoConsented);
+
+            videoconsented.style.display = "block";
+            thumbnailconsented.style.display = "none";
+            videoconsented.play();
+        }
+
+        function tipSight(thumbnailSight, videoSight) {
+            var tooltip = document.getElementById('sight');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text5');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailsight = document.getElementById(thumbnailSight);
+            var videosight = document.getElementById(videoSight);
+
+            videosight.style.display = "block";
+            thumbnailsight.style.display = "none";
+            videosight.play();
+        }
+
+        function tipBeside(thumbnailBeside, videoBeside) {
+            var tooltip = document.getElementById('beside');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text6');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailbeside = document.getElementById(thumbnailBeside);
+            var videobeside = document.getElementById(videoBeside);
+
+            videobeside.style.display = "block";
+            thumbnailbeside.style.display = "none";
+            videobeside.play();
+        }
+
+        function tipSteadily(thumbnailSteadily, videoSteadily) {
+            var tooltip = document.getElementById('steadily');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text7');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailsteadily = document.getElementById(thumbnailSteadily);
+            var videosteadily = document.getElementById(videoSteadily);
+
+            videosteadily.style.display = "block";
+            thumbnailsteadily.style.display = "none";
+            videosteadily.play();
+        }
+
+        function tipSleeping(thumbnailSleeping, videoSleeping) {
+            var tooltip = document.getElementById('sleeping');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text8');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailsleeping = document.getElementById(thumbnailSleeping);
+            var videosleeping = document.getElementById(videoSleeping);
+
+            videosleeping.style.display = "block";
+            thumbnailsleeping.style.display = "none";
+            videosleeping.play();
+        }
+
+        function tipGoal() {
+            var tooltip = document.getElementById('goal');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text9');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailgoal = document.getElementById(thumbnailGoal);
+            var videogoal = document.getElementById(videoGoal);
+
+            videogoal.style.display = "block";
+            thumbnailgoal.style.display = "none";
+            videogoal.play();
+        }
+
+        function tipSwiftest() {
+            var tooltip = document.getElementById('swiftest');
+            tooltip.style.display = 'block';
+            var highlightedText = document.querySelector('.highlighted-text10');
+            var rect = highlightedText.getBoundingClientRect();
+            var centerHorizontal = rect.left + rect.width / 2;
+            var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
+            tooltip.style.left = tooltipLeft + 'px';
+            tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
+
+            var thumbnailswiftest = document.getElementById(thumbnailSwiftest);
+            var videoswiftest = document.getElementById(videoSwiftest);
+
+            videoswiftest.style.display = "block";
+            thumbnailswiftest.style.display = "none";
+            videoswiftest.play();
+        }
+
+        function closeTip(tooltipId) {
+            var tooltip = document.getElementById(tooltipId);
+            if (tooltip) {
+                tooltip.style.display = 'none';
+            }
+        }
+
+        function getPlaySVG() {
+            return `<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                    </svg>`;
+        }
+        
+        function getPauseSVG() {
+            return `<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FCC710" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5"/>
+                    </svg>`;
+        }
+        </script>
+    </body>
+</html>
