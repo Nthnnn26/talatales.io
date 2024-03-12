@@ -9,8 +9,108 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <style>
+            .story-view {
+                display: none;
+
+            }
+            .hover-fx:hover {
+                transform: scale(1.1); 
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
-       
+
+        <section class="story-view">
+            <div class="text-center mt-5 mb-5">
+                <h1 style="color: #1A3057;">Choose Your Avatar</h1>
+            </div>
+            <div class="container d-flex flex-md-column flex-sm-row justify-content-center align-items-center">         
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/Bird.png?raw=true" class="img-fluid hover-fx profile-image" alt="Bird" onclick="insertImage('img/Bird.svg')">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/Cat.png?raw=true" class="img-fluid hover-fx profile-image" alt="Cat" onclick="insertImage('img/Cat.svg')">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/Dog.png?raw=true" class="img-fluid hover-fx profile-image" alt="Dog" onclick="insertImage('img/Dog.svg')">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/Fox.png?raw=true" class="img-fluid hover-fx profile-image" alt="Fox" onclick="insertImage('img/Fox.svg')">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/Koala.png?raw=true" class="img-fluid hover-fx profile-image" alt="Koala" onclick="insertImage('img/Koala.svg')">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/Rabbit.png?raw=true" class="img-fluid hover-fx profile-image" alt="Rabbit" onclick="insertImage('img/Rabbit.svg')">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view">
+            <header class="position-absolute">
+                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="image">    
+            </header>
+
+            <div class="container position-relative d-flex justify-content-center align-items-center vh-100" style="max-width: 400px;">
+                
+         
+                <div class="row justify-content-center align-items-center">
+                    <div class="text-center">
+                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/Rabbit.png?raw=true" class="img-fluid" alt="SVG Image">  
+                    </div>  
+                    <form action="" method="post">         
+                    <div class="row mb-3 text-color">
+                        <input type="name" name="nickname" class="form-control form-control-lg" style="background-color: #DEE0F3;" placeholder="Write your nickname" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" name="submit" class="btn btn-lg ms-auto access-btn">Submit</button>
+                    </div>
+                    </form>  
+                </div>
+            </div>
+        </section>
+
+        <section class="story-view">
+            <header class="position-absolute">
+                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="image">    
+            </header>
+            <div class="container d-flex justify-content-center align-items-center min-vh-100">
+                <div class="row vh-100">
+                    <div class="col-md-12 d-flex justify-content-center align-items-center flex-column">
+                        <div class="row align-items-center p-2">
+                            <strong><h1 style="color: #1A3057;">Hello! Lisa.</h1></strong>
+                        </div>
+                        <div class="row align-items-center p-3">
+                            <strong><h4 class="text-center" style="color: #1A3057;">We are excited to be your reading friend, Before we can start, I will tour you around the website.</h4></strong>
+                        </div>
+                        <div class="row text-center p-2">
+                            <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/Rabbit.png?raw=true" class="img-fluid" alt="image"> 
+                        </div>
+                        <form action="" method="post">
+                            <div class="row text-center">
+                                <button type="submit" name="lets_go" class="btn btn-lg ms-auto access-btn" style="width: 200px;">Sure! Let's go</button> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            window.addEventListener('load', function () {
+            var sections = document.querySelectorAll('.story-view');
+
+            if (sections.length > 0) {
+                sections[0].style.display = 'block';
+            }
+            });
+        </script>
     </body>
 </html>

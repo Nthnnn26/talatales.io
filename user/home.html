@@ -72,10 +72,10 @@
                     <div style="cursor: pointer;">
                         <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/theTortoise.png?raw=true" alt="png Image" style="border: 5px solid #FFF; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);">
                     </div>
-                    <h6 style="max-width: 140px;">The Tortoise and the Hare</h6>                     
+                    <h6 style="max-width: 140px; padding: 10px;">The Tortoise and the Hare</h6>                     
                 </div>
                 
-                <div class="" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalTortoise">
+                <div class="" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalDumpty">
                     <div style="cursor: pointer;">
                         <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/theTortoise.png?raw=true" alt="png Image" style="border: 5px solid #FFF; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);">
                     </div>
@@ -105,6 +105,34 @@
                                 <div class="d-flex w-100 justify-content-around">
                                     <button id="read" type="button" class="btn-block btn-md" style="background: transparent; border: none;" onclick="read()"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/read.png?raw=true" alt="png"></button>
                                     <button type="button" class="btn-block btn-md" style="background: transparent; border: none;" onclick="theTortoiseAndTheHareGame()"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/play_unlock.png?raw=true" alt="png"></button>
+                                </div>                                             
+                            </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modalDumpty" tabindex="-1" role="dialog" aria-labelledby="customModalLabel" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3; position: relative;">                         
+                            <div class="container-fluid d-flex justify-content-center align-items-center favorite">
+                                <img id="" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/heart.png?raw=true" alt="png">
+                            </div>                                                                           
+                            <div style="padding-top: 20px;">
+                                <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/theTortoise.png?raw=true" alt="png" style="max-width: 110px; height: auto; border: 5px solid #FFF; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);">
+                            </div>    
+    
+                                <p class="lead font-weight-bold" style="margin: 0; color: #1A3057;">The Tortoise and the Hare</p>
+                                <p style="margin: 0; color: #6C628D;">Aesop</p> 
+                                <p style="margin: 0; color: #6C628D;">Illustrated by;</p>  
+                                <p style="margin: 0; color: #6C628D;">Jeanelle S. Yee</p>
+                                <p style="margin: 20px; color: #6C628D;">In the classic tale of "The Hare and the Tortoise," 
+                                    a boastful hare challenges a slow-moving tortoise to a race. The hare, confident in his speed, 
+                                    takes an early lead, while the tortoise plods along steadily. Who do you think will win the race: 
+                                    the speedy hare or the steady tortoise?</p>                                                 
+                            <div class="modal-footer w-100" style="border: none;">                              
+                                <div class="d-flex w-100 justify-content-around">
+                                    <button id="read" type="button" class="btn-block btn-md" style="background: transparent; border: none;"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/read.png?raw=true" alt="png"></button>
+                                    <button type="button" class="btn-block btn-md" style="background: transparent; border: none;" data-dismiss="modal" id="locked_story"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/play_lock.png?raw=true" alt="png"></button>
                                 </div>                                             
                             </div>                     
                         </div>
@@ -163,6 +191,15 @@
                 </div>
             </div>
         </section>
+
+        <div class="modal fade" id="locked_modal" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content d-flex justify-content-center align-items-center" style="border-radius: 30px; background-color: #DEE0F3;">
+                    <p class="text-center lead font-weight-bold text-xl mt-5" style="color: #6C628D; max-width: 180px;">Ooops... You must read the story first before playing</p>
+                    <button type="button" class="btn  mb-5 mt-3 hide-modal-btn" style="background-color: #ff6600; border: none; border-radius: 30px; color: whitesmoke; width: 150px;" data-bs-dismiss="modal">Okay</button>
+                </div>            
+            </div>
+        </div>
 
         <footer>  
             <div style="position: absolute; top: 0; margin-top: 40px;">
