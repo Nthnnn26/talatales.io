@@ -4,7 +4,7 @@ function forgotPassword() {
 }
 
 function read() {
-    window.location.href = 'the-tortoise-and-the-hare-reading.html';
+    window.location.href = 'the-tortoise-and-the-hare-read.html';
 }
 
 function theTortoiseAndTheHareGame() {

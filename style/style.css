@@ -152,6 +152,51 @@ body .favorite {
     margin-right: 30px; 
     cursor: pointer;
 }
+
+.memory-view {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 650px;
+    gap: 20px;
+    transform-style: preserve-3d;
+
+}
+.item {
+    position: relative;
+    width: 110px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F59F0A;
+    background: #6C628D;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: rotateY(180deg);
+    transition: 0.3s;
+}
+.item.boxOpen {
+    transform: rotateY(0deg);
+}
+.item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #DEE0F3;
+    background-image: url('./memory-card.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    transition: 0.3s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+.boxOpen:after , 
+.boxMatch:after {
+    transform: rotateY(180deg);
+}
 footer {
     background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/footer.png?raw=true'); 
     background-size: cover;

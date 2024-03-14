@@ -199,3 +199,4 @@ if (checkAnswer === 1) {
     $('#wrong').modal('show')  
 }
 }
+
