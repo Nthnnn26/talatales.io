@@ -369,41 +369,71 @@
             }
         }
 
-        const words = ["JOG","RUN","LAUGH","AMUSED","AGREED","CONSENTED","FAST","SWIFT","LOOK","SIGHT"];
-        var shufWords = words.sort(() => (Math.random() > .5) ? 2 : -1);
-        for (var i = 0; i < words.length; i++) {
-            let box = document.createElement('div')
-            box.className = 'item';
-            box.innerHTML = shufWords[i]
+        const pairs = [
+            ["fast", "swift"],
+            ["jog", "run"],
+            ["laugh", "amused"],
+            ["agreed", "consented"],
+            ["look", "sight"]
+        ];
+        const words = pairs.flatMap(pair => pair);
+        shuffleArray(words);
+        let openBoxes = []; // Array to store open boxes
 
-            box.onclick = function(){
-                this.classList.add('boxOpen')
-                setTimeout(function(){
-                    if (document.querySelectorAll('.boxOpen').length > 1) {
-                        if (document.querySelectorAll('.boxOpen')[0].innerHTML == document.querySelectorAll('.boxOpen')[1].innerHTML) {
-                            document.querySelectorAll('.boxOpen')[0].classList.add('boxMatch')
-                            document.querySelectorAll('.boxOpen')[1].classList.add('boxMatch')
+for (let i = 0; i < words.length; i++) {
+    let box = document.createElement('div');
+    box.className = 'item';
+    box.innerHTML = words[i];
 
-                            document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
-                            document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
+    box.onclick = function() {
+        if (openBoxes.length === 2 || this.classList.contains('boxMatch')) {
+            return; // Prevent clicking if already 2 boxes are open or the box is already matched
+        }
+        if (!this.classList.contains('boxOpen') && !this.classList.contains('boxMatch')) {
+            this.classList.add('boxOpen');
+            openBoxes.push(this);
 
-                            if (document.querySelectorAll('.boxMatch').length == words.length){
-                                alert("All pairs matched!");
-                            } 
-                        } 
-                        else {
-                         alert(document.querySelectorAll('.boxOpen')[1])
-                            document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
-                            document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
+            if (openBoxes.length === 2) {
+                setTimeout(() => {
+                    let word1 = openBoxes[0].innerHTML;
+                    let word2 = openBoxes[1].innerHTML;
+
+                    let pairFound = pairs.some(pair => {
+                        return (pair[0] === word1 && pair[1] === word2) || (pair[0] === word2 && pair[1] === word1);
+                    });
+
+                    if (pairFound) {
+                        openBoxes.forEach(box => {
+                            box.classList.add('boxMatch');
+                            box.classList.remove('boxOpen');
+                        });
+
+                        openBoxes = []; // Reset openBoxes array
+
+                        if (document.querySelectorAll('.boxMatch').length === words.length) {
+                            $('#done').modal('show');
                         }
+                    } else {
+                        openBoxes.forEach(box => {
+                            box.classList.remove('boxOpen');
+                        });
+                        openBoxes = []; // Reset openBoxes array
                     }
-                },1000)
+                }, 1000);
             }
+        }
+    };
 
             document.querySelector('.memory-view').appendChild(box);         
         }
 
-        
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
         </script>
     </body>
 </html>

@@ -158,51 +158,57 @@ body .favorite {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 650px;
+    max-width: 700px;
     gap: 20px;
     transform-style: preserve-3d;
 
 }
 .item {
     position: relative;
-    width: 110px;
-    height: 170px;
+    width: 120px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
     color: #F59F0A;
     background: #6C628D;
     border-radius: 20px;
     cursor: pointer;
-    transform: rotateY(180deg);
-    transition: 0.3s;
+    transform: rotateY(0deg);
+    transition: transform 0.5s, background-color 0.3s;
 }
 .item.boxOpen {
-    transform: rotateY(0deg);
+    transform: rotateY(180deg);
 }
 .item::after {
     content: '';
     position: absolute;
     inset: 0;
     background-color: #DEE0F3;
-    background-image: url('./memory-card.png');
+    background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/memory-card.png?raw=true');
     background-position: center;
     background-repeat: no-repeat; 
     border-radius: 20px;
-    transition: 0.3s;
+    transition: 0.5s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
 }
-.boxOpen:after , 
+.item.boxMatch {
+    background-color: green; /* Change background color to green when matched */
+}
+.boxOpen:after 
 .boxMatch:after {
     transform: rotateY(180deg);
 }
 footer {
+    width: 100%;
+    max-height: 450px;
     background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/footer.png?raw=true'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
-    height: 450px; 
+    
     display: flex;   
     justify-content: center;
     align-items: center;
@@ -303,6 +309,7 @@ body .modal-transparent {
         text-align: center;              
     }
     footer {
+        width: 100%;
         height: 450px;
         background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/mob_footer.png?raw=true');
         background-size: cover;
