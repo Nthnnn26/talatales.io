@@ -175,11 +175,11 @@ body .favorite {
     background: #6C628D;
     border-radius: 20px;
     cursor: pointer;
-    transform: rotateY(0deg);
+    transform: rotateY(360deg);
     transition: transform 0.5s, background-color 0.3s;
 }
 .item.boxOpen {
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
 }
 .item::after {
     content: '';
@@ -189,6 +189,7 @@ body .favorite {
     background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/memory-card.png?raw=true');
     background-position: center;
     background-repeat: no-repeat; 
+    background-size: 50%;
     border-radius: 20px;
     transition: 0.5s;
     transform: rotateY(0deg);
@@ -197,7 +198,7 @@ body .favorite {
 .item.boxMatch {
     background-color: green; /* Change background color to green when matched */
 }
-.boxOpen:after 
+.boxOpen:after, 
 .boxMatch:after {
     transform: rotateY(180deg);
 }
@@ -307,6 +308,14 @@ body .modal-transparent {
     .about-content {
         flex-direction: column; 
         text-align: center;              
+    }
+    .memory-view {  
+        gap: 10px;   
+    }
+    .item {
+        width: 70px;
+        height: 120px;
+        font-size: 14px;       
     }
     footer {
         width: 100%;
