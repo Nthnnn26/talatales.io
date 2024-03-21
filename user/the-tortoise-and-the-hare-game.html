@@ -35,6 +35,7 @@
         </header>
 
         <section class="container-fluid text-center mt-5 game-view">
+            
             <h1 style="color: #6C628D;">Choose a Game</h1>
             <div class="container d-flex justify-content-center align-items-center flex-wrap mt-5">
                 <div class="d-flex justify-content-center align-items-center flex-grow-1">
@@ -49,162 +50,433 @@
             </div>        
         </section>
 
-        <section class="container-fluid text-center mt-5 quiz-bee">
-            <div class="container" id="question-1">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">Who was making fun of whom in the story?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionOne(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionOne(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionOne(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionOne(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c4.png?raw=true" alt="image"></button> 
-                    </div> 
-                </div>
-            </div>  
-            
-            <div class="container quiz-view" id="question-2">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">What did the Tortoise suggest to the Hare?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionTwo(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionTwo(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionTwo(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionTwo(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c4.png?raw=true" alt="image"></button> 
-                    </div> 
-                </div>
-            </div> 
+        <section class="quiz-bee">
+            <div class="container-fluid d-flex justify-content-center align-items-center text-center vh-100">
+                <div class="container" id="question-1">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">Who was making fun of whom in the story?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionOne(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionOne(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionOne(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionOne(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q1_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
+                </div>  
+                
+                <div class="container quiz-view" id="question-2">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">What did the Tortoise suggest to the Hare?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionTwo(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionTwo(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionTwo(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionTwo(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q2_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
+                </div> 
 
-            <div class="container quiz-view" id="question-3">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">Who agreed to act as the judge for the race?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionThree(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionThree(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionThree(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionThree(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c4.png?raw=true" alt="image"></button> 
-                    </div> 
-                </div>
-            </div> 
+                <div class="container quiz-view" id="question-3">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">Who agreed to act as the judge for the race?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionThree(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionThree(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionThree(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionThree(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q3_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
+                </div> 
 
-            <div class="container quiz-view" id="question-4">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">What did the Hare do during the race?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionFour(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionFour(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionFour(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionFour(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c4.png?raw=true" alt="image"></button> 
-                    </div> 
+                <div class="container quiz-view" id="question-4">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">What did the Hare do during the race?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionFour(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionFour(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionFour(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionFour(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q4_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
                 </div>
-            </div>
 
-            <div class="container quiz-view" id="question-5">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">How did the Tortoise feel about racing the Hare?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionFive(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionFive(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionFive(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionFive(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c4.png?raw=true" alt="image"></button> 
-                    </div> 
+                <div class="container quiz-view" id="question-5">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">How did the Tortoise feel about racing the Hare?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionFive(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionFive(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionFive(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionFive(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q5_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
                 </div>
-            </div>
 
-            <div class="container quiz-view" id="question-6">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">What did the Hare do when he was far ahead in the race?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionSix(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionSix(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionSix(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionSix(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c4.png?raw=true" alt="image"></button> 
-                    </div> 
+                <div class="container quiz-view" id="question-6">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">What did the Hare do when he was far ahead in the race?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionSix(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionSix(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionSix(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionSix(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q6_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
                 </div>
-            </div>
 
-            <div class="container quiz-view" id="question-7">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">How did the Tortoise pass the Hare during the race?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionSeven(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionSeven(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionSeven(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionSeven(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c4.png?raw=true" alt="image"></button> 
-                    </div> 
+                <div class="container quiz-view" id="question-7">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">How did the Tortoise pass the Hare during the race?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionSeven(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionSeven(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionSeven(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionSeven(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q7_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
                 </div>
-            </div>
 
-            <div class="container quiz-view" id="question-8">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">Why did the Hare lose the race?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionEight(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionEight(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionEight(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionEight(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c4.png?raw=true" alt="image"></button> 
-                    </div> 
+                <div class="container quiz-view" id="question-8">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">Why did the Hare lose the race?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionEight(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionEight(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionEight(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionEight(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q8_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
                 </div>
-            </div>
 
-            <div class="container quiz-view" id="question-9">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">Who won the race in the end?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionNine(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionNine(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionNine(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionNine(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c4.png?raw=true" alt="image"></button> 
-                    </div> 
+                <div class="container quiz-view" id="question-9">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">Who won the race in the end?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionNine(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionNine(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionNine(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionNine(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q9_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
                 </div>
-            </div>
 
-            <div class="container quiz-view" id="question-10">
-                <h1 id="question" class="mb-5" style="color: #6C628D;">What lesson does the story teach?</h1>
-                <div class="row mt-5">
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionTen(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c1.png?raw=true" alt="image"></button>
-                        <button type="button" class="btn choices-btn m-2" onclick="questionTen(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c2.png?raw=true" alt="image"></button>            
-                    </div> 
-                    <div class="container flex-wrap d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn choices-btn m-2" onclick="questionTen(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c3.png?raw=true" alt="image"></button> 
-                        <button type="button" class="btn choices-btn m-2" onclick="questionTen(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c4.png?raw=true" alt="image"></button> 
-                    </div> 
+                <div class="container quiz-view" id="question-10">
+                    <h1 id="question" class="mb-5" style="color: #6C628D;">What lesson does the story teach?</h1>
+                    <div class="row mt-5">
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionTen(1)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c1.png?raw=true" alt="image"></button>
+                            <button type="button" class="btn choices-btn m-2" onclick="questionTen(2)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c2.png?raw=true" alt="image"></button>            
+                        </div> 
+                        <div class="container flex-wrap d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn choices-btn m-2" onclick="questionTen(3)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c3.png?raw=true" alt="image"></button> 
+                            <button type="button" class="btn choices-btn m-2" onclick="questionTen(4)"><img src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/q10_c4.png?raw=true" alt="image"></button> 
+                        </div> 
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="memory-game">  
-            <div class="container-fluid d-flex justify-content-center align-items-center mt-5">
+            <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
                 <div class="memory-view">
                 
                 </div>
             </div>                            
         </section>
 
-        <section class="container-fluid text-center mt-5 spelling-bee">
-         
-                <h1 style="color: #6C628D;">Spelling BEE</h1>
-
-            
-                   
+        <section class="spelling-bee">
+            <div class="container d-flex justify-content-center align-items-center vh-100">
+                <div class="row d-flex justify-content-center align-items-center w-100 v-reverse">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="container d-flex justify-content-center align-items-center flex-row mt-5" style="gap: 20px;">
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box sb-first-set">
+                                    <h1>A</h1>
+                                </div>
+                                <div class="word-box sb-first-set">
+                                    <h1>E</h1>
+                                </div>
+                                <div class="word-box sb-first-set">
+                                    <h1>I</h1>
+                                </div>
+                                <div class="word-box sb-first-set">
+                                    <h1>G</h1>
+                                </div> 
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box sb-first-set">
+                                    <h1>F</h1>
+                                </div>
+                                <div class="word-box sb-first-set">
+                                    <h1>L</h1>
+                                </div>
+                                <div class="word-box sb-first-set">
+                                    <h1>O</h1>
+                                </div>
+                                <div class="word-box sb-first-set">
+                                    <h1>B</h1>
+                                </div> 
+                            </div>                     
+                        </div>
+                     
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center flex-column align-items-center">
+                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/sb-goal.png?raw=true" alt="image">
+                        <div class="container d-flex justify-content-center align-items-center mt-5" style="gap: 10px;">
+                            <div class="word-box sb-first-ans">
+                                <h1></h1>
+                            </div>
+                            <div class="word-box sb-first-ans">
+                               
+                            </div>
+                            <div class="word-box sb-first-ans">
+                               
+                            </div>
+                            <div class="word-box sb-first-ans">
+                                
+                            </div>                          
+                        </div>
+                    </div>                   
+                </div>            
+            </div>  
+            <div class="container d-flex justify-content-center align-items-center vh-100">
+                <div class="row d-flex justify-content-center align-items-center w-100 v-reverse">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="container d-flex justify-content-center align-items-center flex-row mt-5" style="gap: 20px;">
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box">
+                                    <h1>W</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>E</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>S</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>G</h1>
+                                </div> 
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box">
+                                    <h1>F</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>L</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>O</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>B</h1>
+                                </div> 
+                            </div>                     
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center flex-column align-items-center">
+                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/sb-slow.PNG?raw=true" alt="image">
+                        <div class="container d-flex justify-content-center align-items-center mt-5" style="gap: 10px;">
+                            <div class="word-box">
+                                <h1>B</h1>
+                            </div>
+                            <div class="word-box">
+                               
+                            </div>
+                            <div class="word-box">
+                               
+                            </div>
+                            <div class="word-box">
+                                
+                            </div>                          
+                        </div>
+                    </div>
+                    
+                </div>            
+            </div> 
+            <div class="container d-flex justify-content-center align-items-center vh-100">
+                <div class="row d-flex justify-content-center align-items-center w-100 v-reverse">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="container d-flex justify-content-center align-items-center flex-row mt-5" style="gap: 20px;">
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box">
+                                    <h1>W</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>E</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>S</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>G</h1>
+                                </div> 
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box">
+                                    <h1>P</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>L</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>O</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>E</h1>
+                                </div> 
+                            </div>                     
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center flex-column align-items-center">
+                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/sb-sleep.PNG?raw=true" alt="image">
+                        <div class="container d-flex justify-content-center align-items-center mt-5" style="gap: 10px;">
+                            <div class="word-box">
+                                <h1>B</h1>
+                            </div>
+                            <div class="word-box">
+                               
+                            </div>
+                            <div class="word-box">
+                               
+                            </div>
+                            <div class="word-box">
+                                
+                            </div>                          
+                        </div>
+                    </div>
+                    
+                </div>            
+            </div> 
+            <div class="container d-flex justify-content-center align-items-center vh-100">
+                <div class="row d-flex justify-content-center align-items-center w-100 v-reverse">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="container d-flex justify-content-center align-items-center flex-row mt-5" style="gap: 20px;">
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box">
+                                    <h1>H</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>E</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>A</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>G</h1>
+                                </div> 
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box">
+                                    <h1>P</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>L</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>O</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>U</h1>
+                                </div> 
+                            </div>                     
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center flex-column align-items-center">
+                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/sb-laugh.png?raw=true" alt="image">
+                        <div class="container d-flex justify-content-center align-items-center mt-5" style="gap: 10px;">
+                            <div class="word-box">
+                                <h1>B</h1>
+                            </div>
+                            <div class="word-box">
+                               
+                            </div>
+                            <div class="word-box">
+                               
+                            </div>
+                            <div class="word-box">
+                                
+                            </div>                          
+                        </div>
+                    </div>
+                    
+                </div>            
+            </div> 
+            <div class="container d-flex justify-content-center align-items-center vh-100">
+                <div class="row d-flex justify-content-center align-items-center w-100 v-reverse">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="container d-flex justify-content-center align-items-center flex-row mt-5" style="gap: 20px;">
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box">
+                                    <h1>B</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>E</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>A</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>E</h1>
+                                </div> 
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center flex-column" style="gap: 20px;">
+                                <div class="word-box">
+                                    <h1>D</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>I</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>O</h1>
+                                </div>
+                                <div class="word-box">
+                                    <h1>S</h1>
+                                </div> 
+                            </div>                     
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center flex-column align-items-center">
+                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/theTortoiseAndTheHare/sb-beside.PNG?raw=true" alt="image">
+                        <div class="container d-flex justify-content-center align-items-center mt-5" style="gap: 10px;">
+                            <div class="word-box">
+                                <h1>B</h1>
+                            </div>
+                            <div class="word-box">
+                               
+                            </div>
+                            <div class="word-box">
+                               
+                            </div>
+                            <div class="word-box">
+                                
+                            </div>                          
+                        </div>
+                    </div>
+                    
+                </div>            
+            </div>                 
         </section>
 
         <div class="modal fade" id="exit_story" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="true" data-keyboard="true">
@@ -380,52 +652,52 @@
         shuffleArray(words);
         let openBoxes = []; // Array to store open boxes
 
-for (let i = 0; i < words.length; i++) {
-    let box = document.createElement('div');
-    box.className = 'item';
-    box.innerHTML = words[i];
+    for (let i = 0; i < words.length; i++) {
+        let box = document.createElement('div');
+        box.className = 'item';
+        box.innerHTML = words[i];
 
-    box.onclick = function() {
-        if (openBoxes.length === 2 || this.classList.contains('boxMatch')) {
-            return; // Prevent clicking if already 2 boxes are open or the box is already matched
-        }
-        if (!this.classList.contains('boxOpen') && !this.classList.contains('boxMatch')) {
-            this.classList.add('boxOpen');
-            openBoxes.push(this);
+            box.onclick = function() {
+                if (openBoxes.length === 2 || this.classList.contains('boxMatch')) {
+                    return; // Prevent clicking if already 2 boxes are open or the box is already matched
+                }
+                if (!this.classList.contains('boxOpen') && !this.classList.contains('boxMatch')) {
+                    this.classList.add('boxOpen');
+                    openBoxes.push(this);
 
-            if (openBoxes.length === 2) {             
-                setTimeout(() => {
-                    let word1 = openBoxes[0].innerHTML;
-                    let word2 = openBoxes[1].innerHTML;
+                    if (openBoxes.length === 2) {             
+                        setTimeout(() => {
+                            let word1 = openBoxes[0].innerHTML;
+                            let word2 = openBoxes[1].innerHTML;
 
-                    let pairFound = pairs.some(pair => {
-                        return (pair[0] === word1 && pair[1] === word2) || (pair[0] === word2 && pair[1] === word1);
-                    });
+                            let pairFound = pairs.some(pair => {
+                                return (pair[0] === word1 && pair[1] === word2) || (pair[0] === word2 && pair[1] === word1);
+                            });
 
-                    if (pairFound) {
-                        openBoxes.forEach(box => {
-                            box.classList.add('boxMatch');
-                            box.classList.remove('boxOpen');
-                        });
+                            if (pairFound) {
+                                openBoxes.forEach(box => {
+                                    box.classList.add('boxMatch');
+                                    box.classList.remove('boxOpen');
+                                });
 
-                        openBoxes = []; // Reset openBoxes array
+                                openBoxes = []; // Reset openBoxes array
 
-                        if (document.querySelectorAll('.boxMatch').length === words.length) {
-                            $('#done').modal('show');
-                        }
-                    } else {
-                        openBoxes.forEach(box => {
-                            box.classList.remove('boxOpen');
-                        });
-                        openBoxes = []; // Reset openBoxes array
+                                if (document.querySelectorAll('.boxMatch').length === words.length) {
+                                    $('#done').modal('show');
+                                }
+                            } else {
+                                openBoxes.forEach(box => {
+                                    box.classList.remove('boxOpen');
+                                });
+                                openBoxes = []; // Reset openBoxes array
+                            }
+                        }, 1000);
                     }
-                }, 1000);
-            }
-        }
-    };
+                }
+            };
 
-            document.querySelector('.memory-view').appendChild(box);         
-        }
+        document.querySelector('.memory-view').appendChild(box);         
+    }
 
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
@@ -434,6 +706,36 @@ for (let i = 0; i < words.length; i++) {
             }
             return array;
         }
+
+        const wordBoxes = document.querySelectorAll('.sb-first-set');
+
+        wordBoxes.forEach(wordBox => {
+            wordBox.addEventListener('click', function() {
+                const letter = this.textContent.trim(); // Get the letter inside the word-box
+
+                // Find the empty word-box-ans elements
+                const wordBoxAns = document.querySelectorAll('.sb-first-ans');
+
+                // Loop through the word-box-ans elements to find the second empty one
+                let emptyIndex = 0;
+                for (let i = 0; i < wordBoxAns.length; i++) {
+                    if (wordBoxAns[i].textContent.trim() === '') {
+                        emptyIndex++;
+                        
+                            // Create an h1 element
+                            const h1 = document.createElement('h1');
+                            // Set the text content of the h1 element to the clicked letter
+                            h1.textContent = letter;
+                            // Append the h1 element to the second empty word-box-ans
+                            wordBoxAns[i].appendChild(h1);
+                            // Hide the letter from the clicked word-box
+                            this.textContent = '';
+                            break;
+                        
+                    }
+                }
+            });
+        });
         </script>
     </body>
 </html>
