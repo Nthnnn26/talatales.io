@@ -196,20 +196,33 @@ body .favorite {
     backface-visibility: hidden;
 }
 .item.boxMatch {
+    color: white;
     background-color: green; /* Change background color to green when matched */
 }
 .boxOpen:after, 
 .boxMatch:after {
     transform: rotateY(180deg);
 }
-footer {
+.word-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    max-height: 450px;
+    height: auto;
+    min-width: 100px;
+    min-height: 100px;
+    color: #6C628D;
+    text-align: center;
+    background-color: #DEE0F3;
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+footer {
     background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/footer.png?raw=true'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;    
-    
     display: flex;   
     justify-content: center;
     align-items: center;
@@ -316,6 +329,14 @@ body .modal-transparent {
         width: 70px;
         height: 120px;
         font-size: 14px;       
+    }
+    .word-box {
+        min-width: 60px;
+        min-height: 60px;
+        border-radius: 20px;
+    }
+    .v-reverse {
+        flex-direction: column-reverse;
     }
     footer {
         width: 100%;
