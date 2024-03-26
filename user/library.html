@@ -11,41 +11,39 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-white">
-                <img class="img-fluid col-brand" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="png image">
-                <button class="navbar-toggler border-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#000000" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-                </button>
-                <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header text-lighblue border-bottom">
-                        <img class="img-fluid col-brand" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="png image">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="link-nav" href="home.html"><img src="https://github.com/Nthnnn26/talatales/blob/main/assets/home.png?raw=true" alt="png image">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link-nav" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#6C628D" class="bi bi-book-fill" viewBox="0 0 16 16">
-                                        <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
-                                    </svg>
-                                    Library
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="link-nav" href="profile.html"><img src="https://github.com/Nthnnn26/talatales/blob/main/assets/user.png?raw=true" alt="png image">Profile</a>
-                            </li>
-                        </ul>
-                        <div class="ms-auto">
-                            <a class="log-out" href="../index.html"><i class="fa fa-sign-out" aria-hidden="true"></i>  Log out</h4></a>
+        <header class="d-flex justify-content-center align-items-center">
+            <nav class="navbar navbar-expand-lg bg-white" style="width: 95%;">
+                <div class="container-fluid">
+                    <img class="img-fluid col-brand" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="png image">
+                    <button class="navbar-toggler border-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#000000" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+                    <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header text-lighblue border-bottom">
+                            <img class="img-fluid col-brand" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="png image">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="link-nav" href="home.html"><img src="../style/home.png" class="img-fluid" alt="home"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link-nav" href="#"><img src="../style/library-fill.png" class="img-fluid" alt="library"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="link-nav" href="profile.html"><img src="../style/profile.png" class="img-fluid" alt="profile"></a>
+                                </li>
+                            </ul>
+                            <div class="ms-auto">
+                                <a class="link-nav" href="../index.html"><img src="../style/logout.png" class="img-fluid" alt="logout"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
             </nav>
         </header>
 

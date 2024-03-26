@@ -2,6 +2,10 @@
     font-family: 'Etna';
     src: url('Etna-Sans-serif.otf') format('opentype');
 }
+@font-face {
+    font-family: 'Quicksand';
+    src: url('quicksand.bold-regular.otf') format('opentype');
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +13,16 @@
     scroll-behavior: smooth;
     font-family: 'Etna', sans-serif;
 }
+::placeholder {
+    color: #B6ABD9;
+    opacity: 1;
+}
 .brand {
     font-size: 48px;
     font-weight: bold;
     color: whitesmoke;
 }
+
 .navbar-nav .nav-item .nav-link {
     text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
     color: #DEE0F3; 
@@ -39,12 +48,6 @@
 .offcanvas-body .ms-auto {
     padding: 10px 20px;
     margin-right: 10px;
-}
-.log-out {
-    text-decoration: none;
-    color: #1A3057; 
-    font-size: 22px;
-    font-weight: 500;
 }
 .index {
     background: url('https://github.com/Nthnnn26/talatales/blob/main/assets/index.png?raw=true');
@@ -123,22 +126,85 @@ input {
     display: none;
 }
 .btn-cat {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     display: inline-block;
-    font-size: 24px;
-    color: #6C628D; 
-    min-width: 170px;
+    min-width: 190px;
     min-height: 50px;
     border: none;
-    border-right: 2px solid #808080;
     background-color: white;
 }
 .active-cat {
     background-color: #DEE0F3;      
 }
+
+.story-cover {
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-left: 5px solid #FFFAEC;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 1);             
+}
+
+.btn-story:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
+.collaborator-btn {
+    background-color: #6C628D;
+    color: #FFFFFF;
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: 2px solid #B6ABD9;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.collaborator-btn:hover {
+    transform: scale(1.1); 
+    background-color: #333333 !important;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.features-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.features-box:hover{
+    background-color: #333333 !important;
+    transition: background-color 0.3s ease; 
+}
+
+.features-box:hover h1 {
+    color: #ffffff !important; 
+    transition: color 0.3s ease-in;
+}
+
+.features-box:hover img {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
+.features-box:hover p {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
 body .favorite {
     background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/favorite.png?raw=true'); 
     background-size: cover;
@@ -152,6 +218,64 @@ body .favorite {
     margin-right: 30px; 
     cursor: pointer;
 }
+
+.collaborator {
+    height: 150px; 
+    background: url('../style/collaborator.png'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+}
+
+.profile-card {
+    position: relative;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card .profile-image p {
+    color: #1A3057;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0;
+}
+
+.swiper-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.swiper {
+    width: 90%;
+    margin: 0 auto;
+    cursor: grab;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+    content: '';
+}
+
+.profile-image img {
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
 
 .memory-view {  
     display: flex;
@@ -218,18 +342,24 @@ body .favorite {
     padding: 5px 10px;
     cursor: pointer;
 }
-footer {
+.bg-footer {
     background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/footer.png?raw=true'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;    
-    display: flex;   
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat;
+    height: 500px;
     position: relative;
 }
 .about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     flex-direction: row;
+}
+.about-content a {
+    text-decoration: none;
+    color: #6C628D;
 }
 .back-btn svg {
     width: 24px; 
@@ -283,7 +413,7 @@ body .modal-transparent {
         font-size: 32px;
     }
     body .sidebar {
-        background-color: rgb(255, 255, 255, 0.15);
+        background-color: rgb(255, 255, 255, 1);
         backdrop-filter: blur(16px);    
     }
     .index {
@@ -346,6 +476,15 @@ body .modal-transparent {
         background-position: center;
         background-repeat: no-repeat; 
     }
+    .bg-footer {
+        background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/mob_footer.png?raw=true');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+        width: 100%;
+        height: 450px;
+        position: relative;
+    }
     .container-fluid button svg {
         width: 45px; 
         height: 45px;
@@ -366,5 +505,12 @@ body .modal-transparent {
         width: 40%;
         height: auto;
      }
-
+    .features-box {
+        width: 100%;
+        height: 250px;       
+    }
+    .story-cover {
+        width: 100px;
+        height: auto;
+    }
 }
