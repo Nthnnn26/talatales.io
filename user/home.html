@@ -63,34 +63,34 @@
                 <button class="fs-3 btn-cat" style="color: #0D6E7B;" onclick="changeCategory('adventure')">Adventure</button>
             </div>
             
-            <div class="container-fluid d-flex scrollable" style="background-color: #DEE0F3; padding: 20px 0px;">
+            <div class="container-fluid d-flex scrollable" style="background-color: #DEE0F3; padding: 10px 0px; height: 400px;">
                 <!--story-->
                 <div class="box fable" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalTortoise">
                     <div style="cursor: pointer;">
                         <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/tortoise.png?raw=true" alt="img">
                     </div>
-                    <h5 style="max-width: 160px; padding: 10px; color: #442B4B;">The Tortoise and the Hare</h6>                     
+                    <h5 style="max-width: 200px; padding: 10px; color: #442B4B;">The Tortoise and the Hare</h6>                     
                 </div>
 
                 <div class="box fairy-tale" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalPigs">
                     <div style="cursor: pointer;">
-                        <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/pigs.png?raw=true" alt="img">
+                        <img class="img-fluid story-cover bg-transparent" src="https://github.com/Nthnnn26/talatales/blob/main/assets/tpigs.png?raw=true" alt="img">
                     </div>
-                    <h5 style="max-width: 160px; padding: 10px; color: #442B4B;">The Three Little Pigs</h6>                     
+                    <h5 style="max-width: 200px; padding: 10px; color: #442B4B;">The Three Little Pigs</h6>                     
                 </div>
 
                 <div class="box fantasy" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalSleeping">
                     <div style="cursor: pointer;">
                         <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/sleeping.png?raw=true" alt="img">
                     </div>
-                    <h5 style="max-width: 160px; padding: 10px; color: #442B4B;">Sleeping Beauty</h6>                     
+                    <h5 style="max-width: 200px; padding: 10px; color: #442B4B;">Sleeping Beauty</h6>                     
                 </div>
 
                 <div class="box adventure" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalHumpty">
                     <div style="cursor: pointer;">
                         <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/humpty.png?raw=true" alt="img">
                     </div>
-                    <h5 style="max-width: 160px; padding: 10px; color: #442B4B;">Humpty Dumpty</h6>                     
+                    <h5 style="max-width: 2000px; padding: 10px; color: #442B4B;">Humpty Dumpty</h6>                     
                 </div>
 
                 <!--modal-->
@@ -128,10 +128,10 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3; position: relative;">                         
                             <div class="container-fluid d-flex justify-content-center align-items-center favorite">
-                                <img id="" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/heart.png?raw=true" alt="png">
+                                <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/heart.png?raw=true" alt="png">
                             </div>                                                                           
                             <div style="padding-top: 20px;">
-                                <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/pigs.png?raw=true" alt="png" style="width: 80%; height: auto;">
+                                <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/tpigs.png?raw=true" alt="png" style="width: 80%; height: auto;">
                             </div>    
     
                                 <p class="lead font-weight-bold" style="margin: 0; color: #1A3057;">The Three Little Pigs</p>
@@ -347,7 +347,7 @@
                             <div class="swiper-slide">
                                 <div class="profile-card">
                                     <div class="profile-image">
-                                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/calzado.png?raw=true" alt="" style="width: 75%;">
+                                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/calzado.png?raw=true" alt="">
                                         <p style="font-family: 'Quicksand', sans-serif;">Jerin Andrea R. Calzado</p>
                                         <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Illustrator</p>
                                     </div>
@@ -356,7 +356,7 @@
                             <div class="swiper-slide">
                                 <div class="profile-card">
                                     <div class="profile-image">
-                                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/valera.png?raw=true" alt="" style="width: 75%;">
+                                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/valera.png?raw=true" alt="">
                                         <p style="font-family: 'Quicksand', sans-serif;">Dreico Joaquin F. Valera</p>
                                         <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Animator</p>
                                     </div>
@@ -453,7 +453,7 @@
                     
                 </div>
                 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                    <div class="about-content">
+                    <div class="about-content reveal">
                         <div class="row p-3">
                             <a href="#"><h3>Home</h3></a>
                         </div>
@@ -521,10 +521,13 @@
                         slidesPerView: 2 
                     },
                     768: {
-                        slidesPerView: 3 
+                        slidesPerView: 3
                     },
                     992: {
                         slidesPerView: 4 
+                    },
+                    1280: {
+                        slidesPerView: 5 
                     }
                 }
             });
