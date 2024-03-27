@@ -17,29 +17,26 @@
                 <div class="container-fluid">
                     <a href="../index.html"><img class="img-fluid col-brand" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="png image"></a>
                     <button class="navbar-toggler border-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#000000" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                        </svg>
+                        <i class="fa fa-bars" aria-hidden="true" style="color: #000000; border: none;"></i>
                     </button>
                 <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header text-lighblue border-bottom">
-                        <img class="img-fluid col-brand" src="https://github.com/Nthnnn26/talatales/blob/main/assets/talatales_colored.png?raw=true" alt="png image">
+                    <div class="offcanvas-header border-bottom"> 
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1">
                             <li class="nav-item">
-                                <a class="link-nav" href="#"><img src="../style/home-fill.png" class="img-fluid" alt="home"></a>
+                                <a class="link-nav" href="#"><img src="https://github.com/Nthnnn26/talatales/blob/main/assets/home-fill.png?raw=true" class="img-fluid" alt="Home"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="link-nav" href="library.html"><img src="../style/library.png" class="img-fluid" alt="library"></a>
+                                <a class="link-nav" href="library.html"><img src="https://github.com/Nthnnn26/talatales/blob/main/assets/library.png?raw=true" class="img-fluid" alt="Library"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="link-nav" href="profile.html"><img src="../style/profile.png" class="img-fluid" alt="home"></a>
+                                <a class="link-nav" href="profile.html"><img src="https://github.com/Nthnnn26/talatales/blob/main/assets/profile.png?raw=true" class="img-fluid" alt="Profile"></a>
                             </li>
                         </ul>
                         <div class="ms-auto">
-                            <a class="link-nav" href="../index.html"><img src="../style/logout.png" class="img-fluid" alt="logout"></a>
+                            <a class="link-nav" href="../index.html"><img src="https://github.com/Nthnnn26/talatales/blob/main/assets/logout.png?raw=true" class="img-fluid" alt="logout"></a>
                         </div>
                     </div>
                 </div>
@@ -58,7 +55,7 @@
         </section>
 
         <section>              
-            <div class="scrollable mt-5">
+            <div class="scrollable mt-5" style="white-space: nowrap;">
                 <button class="fs-3 btn-cat active-cat" style="color: #442B4B;" onclick="changeCategory('all')">All</button>
                 <button class="fs-3 btn-cat" style="color: #EDB129;" onclick="changeCategory('fable')">Fable</button>
                 <button class="fs-3 btn-cat" style="color: #D84FA2;" onclick="changeCategory('fairy-tale')">Fairy Tale</button>
@@ -66,13 +63,34 @@
                 <button class="fs-3 btn-cat" style="color: #0D6E7B;" onclick="changeCategory('adventure')">Adventure</button>
             </div>
             
-            <div class="container-fluid d-flex" style="height: 40vh; background-color: #DEE0F3;">
+            <div class="container-fluid d-flex scrollable" style="height: 40vh; background-color: #DEE0F3;">
                 <!--story-->
                 <div class="box fable" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalTortoise">
                     <div style="cursor: pointer;">
-                        <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/tortoise.png?raw=true" alt="png Image">
+                        <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/tortoise.png?raw=true" alt="img">
                     </div>
-                    <h6 style="max-width: 140px; padding: 10px; color: #442B4B;">The Tortoise and the Hare</h6>                     
+                    <h5 style="max-width: 160px; padding: 10px; color: #442B4B;">The Tortoise and the Hare</h6>                     
+                </div>
+
+                <div class="box fairy-tale" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalPigs">
+                    <div style="cursor: pointer;">
+                        <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/pigs.png?raw=true" alt="img">
+                    </div>
+                    <h5 style="max-width: 160px; padding: 10px; color: #442B4B;">The Three Little Pigs</h6>                     
+                </div>
+
+                <div class="box fantasy" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalSleeping">
+                    <div style="cursor: pointer;">
+                        <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/sleeping.png?raw=true" alt="img">
+                    </div>
+                    <h5 style="max-width: 160px; padding: 10px; color: #442B4B;">Sleeping Beauty</h6>                     
+                </div>
+
+                <div class="box adventure" style="padding: 20px;" data-bs-toggle="modal" data-bs-target="#modalHumpty">
+                    <div style="cursor: pointer;">
+                        <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/humpty.png?raw=true" alt="img">
+                    </div>
+                    <h5 style="max-width: 160px; padding: 10px; color: #442B4B;">Humpty Dumpty</h6>                     
                 </div>
 
                 <!--modal-->
@@ -83,15 +101,15 @@
                                 <img id="" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/heart.png?raw=true" alt="png">
                             </div>                                                                           
                             <div style="padding-top: 20px;">
-                                <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/tortoise.png?raw=true" alt="png">
+                                <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/tortoise.png?raw=true" alt="png" style="width: 80%; height: auto;">
                             </div>    
     
                                 <p class="lead font-weight-bold" style="margin: 0; color: #1A3057;">The Tortoise and the Hare</p>
                                 <p style="margin: 0; color: #6C628D; font-family: 'Quicksand', sans-serif;">Aesop</p> 
-                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif;">Illustrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Jeanelle S. Yee</span></p>  
-                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif;">Narrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Chelsy B. Jimeno</span></p>
-                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif;">Original URL: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">americanliterature.com</span></p> 
-                                <p class="fs-7" style="color: #6C628D; font-family: 'Quicksand', sans-serif; text-align: left; padding: 15px 50px;">
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Illustrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Jeanelle S. Yee</span></p>  
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Narrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Chelsy B. Jimeno</span></p>
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Original URL: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">americanliterature.com</span></p> 
+                                <p class="fs-7" style="color: #6C628D; font-family: 'Quicksand', sans-serif; text-align: left; padding: 15px 50px; font-weight: bold;">
                                     In the classic tale of "The Hare and the Tortoise," 
                                     a boastful hare challenges a slow-moving tortoise to a race. The hare, confident in his speed, 
                                     takes an early lead, while the tortoise plods along steadily. Who do you think will win the race: 
@@ -100,6 +118,96 @@
                                 <div class="d-flex w-100 justify-content-around">
                                     <button id="read" type="button" class="btn-story" style="background: transparent; border: none;" onclick="read()"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/read.png?raw=true" alt="png"></button>
                                     <button type="button" class="btn-story" style="background: transparent; border: none;" onclick="theTortoiseAndTheHareGame()"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/play_unlock.png?raw=true" alt="png"></button>
+                                </div>                                             
+                            </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modalPigs" tabindex="-1" role="dialog" aria-labelledby="customModalLabel" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3; position: relative;">                         
+                            <div class="container-fluid d-flex justify-content-center align-items-center favorite">
+                                <img id="" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/heart.png?raw=true" alt="png">
+                            </div>                                                                           
+                            <div style="padding-top: 20px;">
+                                <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/pigs.png?raw=true" alt="png" style="width: 80%; height: auto;">
+                            </div>    
+    
+                                <p class="lead font-weight-bold" style="margin: 0; color: #1A3057;">The Three Little Pigs</p>
+                                <p style="margin: 0; color: #6C628D; font-family: 'Quicksand', sans-serif;">Aesop</p> 
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Illustrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Jeanelle S. Yee</span></p>  
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Narrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Chelsy B. Jimeno</span></p>
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Original URL: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">americanliterature.com</span></p> 
+                                <p class="fs-7" style="color: #6C628D; font-family: 'Quicksand', sans-serif; text-align: left; padding: 15px 50px; font-weight: bold;">
+                                    In the classic tale of "The Hare and the Tortoise," 
+                                    a boastful hare challenges a slow-moving tortoise to a race. The hare, confident in his speed, 
+                                    takes an early lead, while the tortoise plods along steadily. Who do you think will win the race: 
+                                    the speedy hare or the steady tortoise?</p>                                                 
+                            <div class="modal-footer w-100" style="border: none;">                              
+                                <div class="d-flex w-100 justify-content-around">
+                                    <button id="read" type="button" class="btn-story" style="background: transparent; border: none;" onclick=""><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/read.png?raw=true" alt="png"></button>
+                                    <button type="button" class="btn-story" style="background: transparent; border: none;" id="locked_story" data-bs-dismiss="modal"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/play_lock.png?raw=true" alt="png"></button>
+                                </div>                                             
+                            </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modalSleeping" tabindex="-1" role="dialog" aria-labelledby="customModalLabel" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3; position: relative;">                         
+                            <div class="container-fluid d-flex justify-content-center align-items-center favorite">
+                                <img id="" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/heart.png?raw=true" alt="png">
+                            </div>                                                                           
+                            <div style="padding-top: 20px;">
+                                <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/sleeping.png?raw=true" alt="png" style="width: 80%; height: auto;">
+                            </div>    
+    
+                                <p class="lead font-weight-bold" style="margin: 0; color: #1A3057;">Sleeping Beauty</p>
+                                <p style="margin: 0; color: #6C628D; font-family: 'Quicksand', sans-serif;">Aesop</p> 
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Illustrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Jeanelle S. Yee</span></p>  
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Narrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Chelsy B. Jimeno</span></p>
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Original URL: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">americanliterature.com</span></p> 
+                                <p class="fs-7" style="color: #6C628D; font-family: 'Quicksand', sans-serif; text-align: left; padding: 15px 50px; font-weight: bold;">
+                                    In the classic tale of "The Hare and the Tortoise," 
+                                    a boastful hare challenges a slow-moving tortoise to a race. The hare, confident in his speed, 
+                                    takes an early lead, while the tortoise plods along steadily. Who do you think will win the race: 
+                                    the speedy hare or the steady tortoise?</p>                                                 
+                            <div class="modal-footer w-100" style="border: none;">                              
+                                <div class="d-flex w-100 justify-content-around">
+                                    <button id="read" type="button" class="btn-story" style="background: transparent; border: none;" onclick=""><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/read.png?raw=true" alt="png"></button>
+                                    <button type="button" class="btn-story" style="background: transparent; border: none;" id="locked_story" data-bs-dismiss="modal"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/play_lock.png?raw=true" alt="png"></button>
+                                </div>                                             
+                            </div>                     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modalHumpty" tabindex="-1" role="dialog" aria-labelledby="customModalLabel" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content text-center align-items-center" style="border-radius: 40px; background-color: #DEE0F3; position: relative;">                         
+                            <div class="container-fluid d-flex justify-content-center align-items-center favorite">
+                                <img id="" class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/heart.png?raw=true" alt="png">
+                            </div>                                                                           
+                            <div style="padding-top: 20px;">
+                                <img class="img-fluid story-cover" src="https://github.com/Nthnnn26/talatales/blob/main/assets/humpty.png?raw=true" alt="png" style="width: 80%; height: auto;">
+                            </div>    
+    
+                                <p class="lead font-weight-bold" style="margin: 0; color: #1A3057;">Humpty Dumpty</p>
+                                <p style="margin: 0; color: #6C628D; font-family: 'Quicksand', sans-serif;">Aesop</p> 
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Illustrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Jeanelle S. Yee</span></p>  
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Narrated by: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Chelsy B. Jimeno</span></p>
+                                <p style="margin: 0; color: #6C628D;"><span style="font-family: 'Quicksand', sans-serif; font-weight: bold;">Original URL: </span><span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">americanliterature.com</span></p> 
+                                <p class="fs-7" style="color: #6C628D; font-family: 'Quicksand', sans-serif; text-align: left; padding: 15px 50px; font-weight: bold;">
+                                    In the classic tale of "The Hare and the Tortoise," 
+                                    a boastful hare challenges a slow-moving tortoise to a race. The hare, confident in his speed, 
+                                    takes an early lead, while the tortoise plods along steadily. Who do you think will win the race: 
+                                    the speedy hare or the steady tortoise?</p>                                                 
+                            <div class="modal-footer w-100" style="border: none;">                              
+                                <div class="d-flex w-100 justify-content-around">
+                                    <button id="read" type="button" class="btn-story" style="background: transparent; border: none;" onclick=""><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/read.png?raw=true" alt="png"></button>
+                                    <button type="button" class="btn-story" style="background: transparent; border: none;" id="locked_story" data-bs-dismiss="modal"><img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/play_lock.png?raw=true" alt="png"></button>
                                 </div>                                             
                             </div>                     
                         </div>
@@ -125,7 +233,7 @@
 
         <section class="mt-5">
             <div class="container-fluid d-flex justify-content-center align-items-center" style="width: 90%;">
-                <div class="row text-center">
+                <div class="row text-center reveal">
                     <h1 class="display-1" style="color: #FF7300; margin-bottom: 80px;">Key Features</h1>
                     <div class="row">
                         <div class="col-md-4">
@@ -171,7 +279,7 @@
 
         <section class="mt-5">
             <div class="container-fluid" style="background-color: #CBC0ED;">
-                <div class="row">
+                <div class="row reveal">
                     <div class="col-md-6">
                         <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/device.png?raw=true" alt="image">
                     </div>
@@ -184,9 +292,9 @@
         </section>
 
         <section>
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0 reveal">
                 <div class="collaborator">
-                    <h1 class="display-1 d-flex justify-content-center align-items-center p-3" style="color: #D84FA2; text-align: center;">Be a Collaborator!</h1>
+                    <h1 class="display-1 d-flex justify-content-center align-items-center" style="color: #D84FA2; text-align: center; padding: 50px 0px;">Be a Collaborator!</h1>
                 </div>               
                 
                 <h1 class="p-5 text-center" style="color: #1A3057;">Here in Talatales, we encourage Filipino artist to share their art through illustrations, animations, and even audio narration.</h1>
@@ -239,16 +347,16 @@
                             <div class="swiper-slide">
                                 <div class="profile-card">
                                     <div class="profile-image">
-                                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/calzado.png?raw=true" alt="">
+                                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/calzado.png?raw=true" alt="" style="width: 75%;">
                                         <p style="font-family: 'Quicksand', sans-serif;">Jerin Andrea R. Calzado</p>
-                                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Illustrator</p>                                       
+                                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Illustrator</p>
                                     </div>
                                 </div>                                                                                                                                      
                             </div>
                             <div class="swiper-slide">
                                 <div class="profile-card">
                                     <div class="profile-image">
-                                        <img src="https://github.com/Nthnnn26/talatales/blob/main/assets/valera.png?raw=true" alt="">
+                                        <img class="img-fluid" src="https://github.com/Nthnnn26/talatales/blob/main/assets/valera.png?raw=true" alt="" style="width: 75%;">
                                         <p style="font-family: 'Quicksand', sans-serif;">Dreico Joaquin F. Valera</p>
                                         <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Animator</p>
                                     </div>
@@ -330,10 +438,10 @@
 
         <section>
             <div class="container-fluid" style="background-color: #DEE0F3;">
-                <div class="container text-center" style="padding: 100px 0px;">
+                <div class="container text-center reveal" style="padding: 100px 0px;">
                     <h1 class="display-2" style="color: #D84FA2;">Want to became a collaborator?</h1>
                     <p class="fs-4 p-2" style="color: #1A3057;">Send us a message on Facebook and let's add more stories for children to read.</p>
-                    <button class="collaborator-btn">I'd love to</button>
+                    <button class="collaborator-btn fs-2">I'd love to</button>
                 </div>              
             </div>
         </section>
@@ -364,8 +472,8 @@
         <div class="modal fade" id="locked_modal" role="dialog">
             <div class="modal-dialog modal-dialog-centered modal-md" role="document">
                 <div class="modal-content d-flex justify-content-center align-items-center" style="border-radius: 30px; background-color: #DEE0F3;">
-                    <p class="text-center lead font-weight-bold text-xl mt-5" style="color: #6C628D; max-width: 180px;">Ooops... You must read the story first before playing</p>
-                    <button type="button" class="btn  mb-5 mt-3 hide-modal-btn" style="background-color: #ff6600; border: none; border-radius: 30px; color: whitesmoke; width: 150px;" data-bs-dismiss="modal">Okay</button>
+                    <p class="text-center font-weight-bold fs-1" style="color: #6C628D; padding: 20px; font-family: 'Quicksand', sans-serif;">Ooops... You must read the story first before playing</p>
+                    <button type="button" class="mb-5 fs-3" style="background-color: #528630; border: 2px solid #B6ABD9; padding: 5px 50px; border-radius: 15px; color: #FFFFFF;" data-bs-dismiss="modal">Okay</button>
                 </div>            
             </div>
         </div>

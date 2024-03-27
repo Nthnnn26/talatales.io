@@ -118,7 +118,6 @@ input {
 }
 .scrollable {
     overflow-x: auto;
-    white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
 }
@@ -136,8 +135,18 @@ input {
     border: none;
     background-color: white;
 }
+
+.btn-cat:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
 .active-cat {
     background-color: #DEE0F3;      
+}
+
+.box {
+    min-width: 200px;
+    height: auto;
 }
 
 .story-cover {
@@ -159,7 +168,6 @@ input {
     padding: 10px 50px;
     border-radius: 15px;
     border: 2px solid #B6ABD9;
-    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -167,6 +175,17 @@ input {
     transform: scale(1.1); 
     background-color: #333333 !important;
     transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .features-box {
@@ -220,11 +239,9 @@ body .favorite {
 }
 
 .collaborator {
-    height: 150px; 
-    background: url('../style/collaborator.png'); 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: cover;
+    height: auto;
+    background: radial-gradient(circle at 50% 0%, transparent 0%, #DEE0F3 60%);
+    border-radius: 0 0 50% 50%;
 }
 
 .profile-card {
@@ -342,6 +359,7 @@ body .favorite {
     padding: 5px 10px;
     cursor: pointer;
 }
+
 .bg-footer {
     background-image: url('https://github.com/Nthnnn26/talatales/blob/main/assets/footer.png?raw=true'); 
     background-size: cover;
@@ -424,7 +442,7 @@ body .modal-transparent {
         background-repeat: no-repeat;
     }
     .col-brand {
-        width: 30%;
+        width: 80%;
         height: auto;
     }
     .search-view {
@@ -509,8 +527,5 @@ body .modal-transparent {
         width: 100%;
         height: 250px;       
     }
-    .story-cover {
-        width: 100px;
-        height: auto;
-    }
+
 }
