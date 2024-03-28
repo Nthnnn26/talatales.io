@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
     }
 });
 
-function toggleVideo(thumbnailId, videoId, subtitleId, textId, control) {
+/*function toggleVideo(thumbnailId, videoId, subtitleId, textId, control) {
     var video = document.getElementById(videoId);
     var subtitle = document.getElementById(subtitleId);
     var text = document.getElementById(textId);
@@ -34,7 +34,7 @@ function toggleVideo(thumbnailId, videoId, subtitleId, textId, control) {
         playPauseBtn.innerHTML = getPlaySVG();
 });
     
-}
+}*/
 
 function next(currentPage) {
     var sections = document.querySelectorAll('.story-view');
@@ -65,6 +65,7 @@ function stopAllVideosAndAudio() {
     var allAudio = document.querySelectorAll('audio');
     allAudio.forEach(function(audio) {
         audio.pause();
+        audio.currentTime = 0;
     });
 }
 
