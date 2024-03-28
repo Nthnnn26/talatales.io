@@ -36,44 +36,20 @@ function toggleVideo(thumbnailId, videoId, subtitleId, textId, control) {
     
 }
 
-function next(currentPage, thumbnailId, videoId, subtitleId, textId, control) {
+function next(currentPage) {
     var sections = document.querySelectorAll('.story-view');
     sections[currentPage - 1].style.display = 'none';
     var nextPage = currentPage % sections.length + 1;
     sections[nextPage - 1].style.display = 'block';
     stopAllVideosAndAudio();
-
-    var video = document.getElementById(videoId);
-    var subtitle = document.getElementById(subtitleId);
-    var text = document.getElementById(textId);
-    var thumbnail = document.getElementById(thumbnailId);
-    const playPauseBtn = document.getElementById(control);
-
-    text.style.display = "block";
-    video.style.display = "block";
-    thumbnail.style.display = "none";
-    subtitle.style.display = "none";
-    playPauseBtn.innerHTML = getPlaySVG();
 }
 
-function previous(currentPage, thumbnailId, videoId, subtitleId, textId, control) {
+function prev(currentPage) {
     var sections = document.querySelectorAll('.story-view');
     sections[currentPage - 1].style.display = 'none';
     var previousPage = (currentPage - 2 + sections.length) % sections.length + 1;
     sections[previousPage - 1].style.display = 'block';
     stopAllVideosAndAudio();
-
-    var video = document.getElementById(videoId);
-    var subtitle = document.getElementById(subtitleId);
-    var text = document.getElementById(textId);
-    var thumbnail = document.getElementById(thumbnailId);
-    const playPauseBtn = document.getElementById(control);
-
-    text.style.display = "block";
-    video.style.display = "block";
-    thumbnail.style.display = "none";
-    subtitle.style.display = "none";
-    playPauseBtn.innerHTML = getPlaySVG();
 }
 
 function stopAllVideosAndAudio() {
@@ -92,26 +68,11 @@ function stopAllVideosAndAudio() {
     });
 }
 
-function tipSlow(thumbnailSlow, videoSlow) {          
-var tooltip = document.getElementById('slow');
-tooltip.style.display = 'block';
-var highlightedText = document.querySelector('.highlighted-text');
-var rect = highlightedText.getBoundingClientRect();
-var centerHorizontal = rect.left + rect.width / 2;
-var tooltipLeft = centerHorizontal - tooltip.offsetWidth / 2;
-tooltip.style.left = tooltipLeft + 'px';
-tooltip.style.top = rect.top - tooltip.offsetHeight + 'px';
 
-var thumbnailslow = document.getElementById(thumbnailSlow);
-var videoslow = document.getElementById(videoSlow);
 
-videoslow.style.display = "block";
-thumbnailslow.style.display = "none";
-videoslow.play();
 
-}
 
-function tipLaugh(thumbnailLaugh, videoLaugh) {
+/*function tipLaugh(thumbnailLaugh, videoLaugh) {
 var tooltip = document.getElementById('laugh');
 tooltip.style.display = 'block';
 var highlightedText = document.querySelector('.highlighted-text1');
@@ -290,7 +251,7 @@ var videoswiftest = document.getElementById(videoSwiftest);
 videoswiftest.style.display = "block";
 thumbnailswiftest.style.display = "none";
 videoswiftest.play();
-}
+}*/
 
 function closeTip(tooltipId) {
 var tooltip = document.getElementById(tooltipId);
